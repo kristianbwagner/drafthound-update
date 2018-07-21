@@ -1,0 +1,26 @@
+{
+	"1": {
+		"team_goals_conceded_0": 37500,
+		"team_goals_conceded_1": 18750,
+		"team_goals_conceded_2": 9375,
+		"saves": 5000
+	},
+	"2": {
+		"team_goals_conceded_0": 25000,
+		"team_goals_conceded_1": 12500,
+		"team_goals_conceded_2": 6250,
+		"saves": 0
+	},
+	"3": {
+		"team_goals_conceded_0": 0,
+		"team_goals_conceded_1": 0,
+		"team_goals_conceded_2": 0,
+		"saves": 0
+	},
+	"4": {
+		"team_goals_conceded_0": 0,
+		"team_goals_conceded_1": 0,
+		"team_goals_conceded_2": 0,
+		"saves": 0
+	}
+}
