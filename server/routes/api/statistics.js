@@ -1,6 +1,8 @@
 const Postgres = require("../../../database/postgres/postgres.js");
+const db_dev  = "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5";
+const db_prod = "postgres://gomhcbepfwkkeq:c12e3f58fd938bbbb0825806f1ac90a08cf415de754b2da8d1c4866cf2981faf@ec2-54-217-205-90.eu-west-1.compute.amazonaws.com:5432/dagkemjclktp71";
 const Database = new Postgres({
-  connectionString: "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5",
+  connectionString: db_prod,
   ssl: true
 });
 const drafthoundScoreWeights = require("../../config/dh-score-weights.json");
@@ -17,9 +19,12 @@ module.exports = (app) => {
     const path = req.path;
     const config = {
       gamesRequested: parseInt(req.query.games) || 5,
-      oddsRequested: parseInt(req.query.odds) || 3
+      oddsRequested: parseInt(req.query.odds) || 3,
+      homeAway: req.query.home_away,
+      favoriteUnderdog: req.query.favorite_underdog
     }
-    const cacheKey = `${path}?games=${config.gamesRequested}&odds=${config.oddsRequested}`;
+
+    const cacheKey = `${path}?games=${config.gamesRequested}&odds=${config.oddsRequested}&home_away=${config.homeAway}&favorite_underdog=${config.favoriteUnderdog}`;
     statsCache.get(cacheKey, function( err, data ){
       if (!err && data !== undefined){
         const executionTime = process.hrtime(executionStart)[1] / 1000000;
@@ -200,6 +205,8 @@ function rollupPlayers(players) {
 function rollupStatistics(statistics, fixtures, rollupConfig) {
   const config = rollupConfig || {};
   const gamesIncludedInStatistics = config.gamesRequested;
+  const homeAway = config.homeAway;
+  const favoriteUnderdog = config.favoriteUnderdog;
 	const playerRollup = {};
 	const statisticsMetrics = [
 		"goals",
@@ -253,6 +260,7 @@ function rollupStatistics(statistics, fixtures, rollupConfig) {
 	// Loop over every player and rollup their data
 	for (const playerId in playerRollup) {
 		const player = playerRollup[playerId];
+
 		player.games.forEach(game => {
 			const fixtureId = game.fixture_id;
 			const findFixture = fixtures.filter(d => d.id === fixtureId) || [];
@@ -261,9 +269,21 @@ function rollupStatistics(statistics, fixtures, rollupConfig) {
 			game.cleanDate = +fixtureDate.replace(/-/g,"");
 		});
 		const sortedGames = player.games.sort((a, b) => a.cleanDate - b.cleanDate);
-		const games = gamesIncludedInStatistics >= sortedGames.length
+
+    // Number of games filter
+		let games = gamesIncludedInStatistics >= sortedGames.length
 			? sortedGames
 			: sortedGames.slice(sortedGames.length - gamesIncludedInStatistics);
+
+    // Home away filter
+    if (homeAway === "away" || homeAway === "home") {
+      games = games.filter(d => d.home_away === homeAway);
+    }
+
+    // Favorite underdog filter
+    if (favoriteUnderdog === "favorite" || favoriteUnderdog === "underdog") {
+      games = games.filter(d => d.favorite_underdog === favoriteUnderdog);
+    }
 
 		player.gamesAvailableForStatistics = games.length;
 
@@ -329,9 +349,12 @@ function rollupFixtures(fixtures, rollupConfig) {
 		const team = fixturesTeamRollup[teamId];
 		team.games.forEach(game => game.cleanDate = +game.date.replace(/-/g,""));
 		const sortedGames = team.games.sort((a, b) => a.cleanDate - b.cleanDate);
+
+
 		const games = gamesIncludedInStatistics >= sortedGames
 			? sortedGames
 			: sortedGames.slice(sortedGames.length - gamesIncludedInStatistics);
+
 		team.gamesAvailableForStatistics = games.length;
 
 		games.forEach(game => {
