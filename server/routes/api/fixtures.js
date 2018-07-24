@@ -5,23 +5,23 @@ const Database = new Postgres({
 });
 
 module.exports = (app) => {
-  app.get("/api/teams", (req, res) => {
+  app.get("/api/fixtures", (req, res) => {
 
     // Measure execution time
     var execuionStart = process.hrtime();
 
     // queries for statistics
     const queries = [
-      "SELECT * FROM teams"
+    	"SELECT * FROM fixtures"
     ];
     Database.queryAll(queries).then(data => {
-      const teams = data[0].rows || [];
+    	const fixtures = data[0].rows || [];
       const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
 
       res.json({
         success: true,
         execution_time: `${execuionTime}ms`,
-        data: teams
+        data: fixtures
       });
     }).catch(err => res.json({succes: false}));
   })
