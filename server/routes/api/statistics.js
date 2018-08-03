@@ -89,22 +89,27 @@ function getStatistics(rollupConfig) {
     const queries = [
       "SELECT * FROM fixtures WHERE status='FT'",
       "SELECT * FROM players",
-      "SELECT * FROM statistics"
+      "SELECT * FROM statistics",
+			"SELECT * FROM teams"
     ];
 
     Database.queryAll(queries).then(data => {
 
-      // fixtures
+      // Fixtures rollup
       const fixtures = data[0].rows || [];
       const fixturesPerTeam = rollupFixtures(fixtures);
 
-      // Statistics rollup
+      // Players rollup
       const players = data[1].rows || [];
-      const playersPerId = rollupPlayers(players, rollupConfig);
+      const playersPerId = rollupPlayers(players);
+
+			// Teams rollup
+			const teams = data[3].rows || [];
+			const teamsPerId = rollupTeams(teams);
 
       // Statistics rollup
       const statistics = data[2].rows || [];
-      const statisticsPerPlayer = rollupStatistics(statistics, fixtures, rollupConfig);
+      const statisticsPerPlayer = rollupStatistics(statistics, fixtures, teams, playersPerId, rollupConfig);
 
       // Calculate drafthound score
       const outputArray = [];
@@ -201,8 +206,17 @@ function rollupPlayers(players) {
 	return playersRollup;
 }
 
+// Helper - rollup teams
+function rollupTeams(teams) {
+	const teamsRollup = {};
+	teams.forEach(team => {
+		teamsRollup[team.id] = team;
+	});
+	return teamsRollup;
+}
+
 // Helper - rollup statistics
-function rollupStatistics(statistics, fixtures, rollupConfig) {
+function rollupStatistics(statistics, fixtures, teams, players, rollupConfig) {
   const config = rollupConfig || {};
   const gamesIncludedInStatistics = config.gamesRequested;
   const homeAway = config.homeAway;
@@ -266,9 +280,39 @@ function rollupStatistics(statistics, fixtures, rollupConfig) {
 			const findFixture = fixtures.filter(d => d.id === fixtureId) || [];
 			const fixture = findFixture[0] || {};
 			const fixtureDate = fixture.date;
-			game.cleanDate = +fixtureDate.replace(/-/g,"");
+			const homeTeamId = fixture.home_team_id;
+			const awayTeamId = fixture.away_team_id;
+			const findHomeTeam = teams.filter(d => d.id === homeTeamId) || [];
+			const findAwayTeam = teams.filter(d => d.id === awayTeamId) || [];
+			const homeTeam = findHomeTeam[0] || {};
+			const awayTeam = findAwayTeam[0] || {};
+			const findPlayer = players[playerId] || {}
+
+			game.clean_date = +fixtureDate.replace(/-/g,"");
+			game.home_team_id = fixture.home_team_id;
+			game.away_team_id = fixture.away_team_id;
+			game.home_team_name = homeTeam.name;
+			game.away_team_name = awayTeam.name;
+			game.home_team_score = fixture.home_team_score;
+			game.away_team_score = fixture.away_team_score;
+			game.outcome = fixture.home_team_score === fixture.away_team_score
+				? "draw"
+				: fixture.home_team_score > fixture.away_team_score
+					? "home team win"
+					: fixture.away_team_score > fixture.home_team_score
+					 	? "away team win"
+						: null
+
+			game.player_outcome = game.outcome === "draw"
+				? "draw"
+				: game.outcome === "home team win" && findPlayer.team_id === fixture.home_team_id
+					? "win"
+					: game.outcome === "away team win" && findPlayer.team_id === fixture.away_team_id
+						? "win"
+						: "loss"
 		});
-		const sortedGames = player.games.sort((a, b) => a.cleanDate - b.cleanDate);
+
+		const sortedGames = player.games.sort((a, b) => a.clean_date - b.clean_date);
 
     // Number of games filter
 		let games = gamesIncludedInStatistics >= sortedGames.length
