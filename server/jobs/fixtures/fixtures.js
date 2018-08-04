@@ -1,20 +1,44 @@
 const sportmonks = require("../../../providers/sportmonks/sportmonks.js");
 const premierLeague = sportmonks({
-	seasonId: 6397,
+	seasonId: 12962,
 	apiKey: "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8"
 });
 
-const Postgres = require("../../../database/postgres/postgres.js");
-const Database = new Postgres({
-	connectionString: "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5",
+const pgp = require('pg-promise')({
+	capSQL: true
+});
+
+// Create connection ref to database
+const db = pgp({
+	connectionString: "postgres://gomhcbepfwkkeq:c12e3f58fd938bbbb0825806f1ac90a08cf415de754b2da8d1c4866cf2981faf@ec2-54-217-205-90.eu-west-1.compute.amazonaws.com:5432/dagkemjclktp71",
 	ssl: true
 });
+
+// Column schema for table
+const fixturesSchema = new pgp.helpers.ColumnSet([
+	{name: "id", def: null},
+	{name: "season_id", def: null},
+	{name: "created_at", def: null},
+	{name: "updated_at", def: null},
+	{name: "is_processed", def: null},
+	{name: "date", def: null},
+	{name: "round_id", def: null},
+	{name: "status", def: null},
+	{name: "home_team_id", def: null},
+	{name: "away_team_id", def: null},
+	{name: "home_team_score", def: null},
+	{name: "away_team_score", def: null},
+	{name: "home_team_odds", def: null},
+	{name: "away_team_odds", def: null}
+], {table: "fixtures"});
 
 const timestamp = new Date().getTime();
 premierLeague.fixtures.then((fixtures) => {
 	const queries = [];
-	fixtures.forEach((fixture) => {
-		const update = {
+
+	let outputData = fixtures.map((fixture) => {
+		return {
+			id: fixture.id,
 			season_id: premierLeague.seasonId,
 			created_at: timestamp,
 			updated_at: timestamp,
@@ -26,13 +50,29 @@ premierLeague.fixtures.then((fixtures) => {
 			away_team_id: fixture.visitorteam_id,
 			home_team_score: fixture.scores.localteam_score,
 			away_team_score: fixture.scores.visitorteam_score,
-			odds: 0
+			home_team_odds: 0,
+			away_team_odds: 0
 		};
-		queries.push(Database.table("fixtures").find(fixture.id).update(update));
 	});
-	Database.queryAll(queries).then(() => {
-		console.log("Successfully updated.");
-	}).catch((err) => {
-		console.log(err);
-	});
+	//outputData = [outputData[0]];
+	return insertData(outputData, fixturesSchema);
+}).then(() => {
+	console.log("success");
+}).catch((error) => {
+	console.log(error);
 });
+
+// Create reusable function for upsert-like insert
+function insertData(data, cs) {
+	const conflictQuery = " ON CONFLICT (id) DO UPDATE SET " + cs.columns.map(x => {
+		return `${x.name} = EXCLUDED.${x.name}`;
+	}).join(', ');
+	const insert = pgp.helpers.insert(data, cs) + conflictQuery;
+	return new Promise((resolve, reject) => {
+		db.none(insert).then(() => {
+			resolve();
+		}).catch(err => {
+			reject(err);
+		});
+	});
+}
