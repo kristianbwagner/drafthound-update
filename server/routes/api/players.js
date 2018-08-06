@@ -64,6 +64,8 @@ module.exports = (app) => {
 		const schema = new pgp.helpers.ColumnSet([
 			{name: "id", def: null},
 			{name: "holdet_id", def: null},
+			{name: "is_injured", def: null},
+			{name: "injury_description", def: null},
 		], {table: "players"});
 
     const playerId = req.params.playerId;
@@ -76,7 +78,9 @@ module.exports = (app) => {
 		if(body.data !== undefined) {
 			const playerData = [{
 				id: playerId,
-				holdet_id: body.data.holdet_id
+				holdet_id: body.data.holdet_id,
+				is_injured: body.data.is_injured,
+				injury_description: body.data.injury_description
 			}]
 			insertData(playerData, schema).then(() => {
 		    const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
