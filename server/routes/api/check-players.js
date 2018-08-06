@@ -20,7 +20,7 @@ module.exports = (app) => {
 				return {
 					id: d.id,
 					name: d.full_name,
-					holdet_id: d.holdet_id,
+					holdet_id: d.holdet_id
 				}
 			});
 
