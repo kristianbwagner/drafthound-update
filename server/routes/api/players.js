@@ -76,7 +76,7 @@ module.exports = (app) => {
 		if(body.data !== undefined) {
 			const playerData = [{
 				id: playerId,
-				holdet_id: data.holdet_id
+				holdet_id: body.data.holdet_id
 			}]
 			insertData(playerData, schema).then(() => {
 		    const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
