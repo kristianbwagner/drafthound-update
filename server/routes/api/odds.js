@@ -38,6 +38,7 @@ module.exports = (app) => {
         return {
           fixture_id: f.id,
           date: f.date,
+					status: f.status,
           home_team_id: f.home_team_id,
           away_team_id: f.away_team_id,
           home_team_name: homeTeam.name || "n/a",
