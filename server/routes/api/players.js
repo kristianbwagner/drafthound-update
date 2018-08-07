@@ -71,7 +71,6 @@ module.exports = (app) => {
 			{name: "holdet_position", def: null},
 			{name: "holdet_value", def: null},
 			{name: "holdet_popularity", def: null},
-			{name: "holdet_url", def: null},
 			{name: "holdet_team", def: null},
 		], {table: "players"});
 
