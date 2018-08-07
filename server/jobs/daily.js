@@ -4,12 +4,22 @@ const Levenshtein = require("levenshtein");
 const cheerio = require("cheerio");
 const sportmonks = require("../../providers/sportmonks/sportmonks.js");
 const premierLeague = sportmonks({
-	seasonId: 6397,
+	seasonId: 12962,
 	apiKey: "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8"
 });
 const Postgres = require("../../database/postgres/postgres.js");
 const Database = new Postgres({
 	connectionString: "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5",
+	ssl: true
+});
+
+const pgp = require('pg-promise')({
+	capSQL: true
+});
+
+// Create connection ref to database
+const db = pgp({
+	connectionString: "postgres://gomhcbepfwkkeq:c12e3f58fd938bbbb0825806f1ac90a08cf415de754b2da8d1c4866cf2981faf@ec2-54-217-205-90.eu-west-1.compute.amazonaws.com:5432/dagkemjclktp71",
 	ssl: true
 });
 
@@ -24,6 +34,34 @@ function getClosestMatch(testValue, inArray) {
 }
 
 //console.log(new Levenshtein("João Mário Naval da Costa Eduardo", "João Mário Noval da Costa Eduardo").distance);
+
+// Column schema for table
+const playersSchema = new pgp.helpers.ColumnSet([
+	{name: "id", def: null},
+	{name: "season_id", def: null},
+	{name: "created_at", def: null},
+	{name: "updated_at", def: null},
+	{name: "name", def: null},
+	{name: "full_name", def: null},
+	{name: "first_name", def: null},
+	{name: "last_name", def: null},
+	{name: "team_id", def: null},
+	{name: "position", def: null},
+	{name: "position_id", def: null},
+	{name: "birth_date", def: null},
+	{name: "birth_place", def: null},
+	{name: "nationality", def: null},
+	{name: "height", def: null},
+	{name: "weight", def: null},
+	{name: "is_injured", def: null},
+	{name: "holdet_url", def: null},
+	{name: "holdet_id", def: null},
+	{name: "holdet_name", def: null},
+	{name: "holdet_value", def: null},
+	{name: "holdet_team", def: null},
+	{name: "holdet_position", def: null},
+	{name: "holdet_popularity", def: null},
+], {table: "players"});
 
 // 1. Get general player information from sportmonks
 function getSportMonksPlayers() {
@@ -48,8 +86,7 @@ function getSportMonksPlayers() {
 					birth_place: player.player.data.birthcountry || "",
 					nationality: player.player.data.nationality || "",
 					height: player.player.data.height || "",
-					weight: player.player.data.weight || "",
-					is_injured: player.injured
+					weight: player.player.data.weight || ""
 				};
 				allPlayers.push(update);
 			});
@@ -63,16 +100,15 @@ function getSportMonksPlayers() {
 getSportMonksPlayers().then(sportMonksPlayers => {
 	getPlayerStatistics().then(holdetPlayers => {
 		const holdetPlayerList = holdetPlayers.map(row => {return row.playerName;});
-		const queries = [];
+		const outputData = [];
 		sportMonksPlayers.forEach(sportMonksPlayer => {
 			const closestHoldetName = getClosestMatch(sportMonksPlayer.full_name, holdetPlayerList);
 			const holdetPlayerData = holdetPlayers[closestHoldetName.index];
 
-			//console.log(sportMonksPlayer.full_name + " -> " + closestCommonName.index);
-
 			if (sportMonksPlayer.id !== undefined) {
 				const timestamp = new Date().getTime();
 				const update = {
+					id: sportMonksPlayer.id,
 					season_id: sportMonksPlayer.season_id,
 					created_at: timestamp,
 					updated_at: timestamp,
@@ -88,7 +124,6 @@ getSportMonksPlayers().then(sportMonksPlayers => {
 					nationality: sportMonksPlayer.nationality,
 					height: sportMonksPlayer.height,
 					weight: sportMonksPlayer.weight,
-					is_injured: sportMonksPlayer.is_injured,
 					holdet_url: holdetPlayerData.playerUrl,
 					holdet_id: holdetPlayerData.playerId,
 					holdet_name: holdetPlayerData.playerName,
@@ -97,16 +132,39 @@ getSportMonksPlayers().then(sportMonksPlayers => {
 					holdet_position: holdetPlayerData.playerPosition,
 					holdet_popularity: holdetPlayerData.playerPopularity
 				};
-				queries.push(Database.table("players").find(sportMonksPlayer.id).update(update));
+
+				// Make sure to only have one player in inserts
+				if(outputData.filter(d => d.id === update.id).length === 0) {
+					outputData.push(update);
+				}
 			}
 		});
-		Database.queryAll(queries).then(() => {
-			console.log("Successfully updated.");
-		}).catch((err) => {
-			console.log(err);
-		});
+
+		//const output = outputData.slice(0,260);
+		//console.log(output);
+
+		return insertData(outputData, playersSchema);
+	}).then(() => {
+		console.log("success");
+	}).catch((error) => {
+		console.log(error);
 	});
 });
+
+// Create reusable function for upsert-like insert
+function insertData(data, cs) {
+	const conflictQuery = " ON CONFLICT (id) DO UPDATE SET " + cs.columns.map(x => {
+		return `${x.name} = EXCLUDED.${x.name}`;
+	}).join(', ');
+	const insert = pgp.helpers.insert(data, cs) + conflictQuery;
+	return new Promise((resolve, reject) => {
+		db.none(insert).then(() => {
+			resolve();
+		}).catch(err => {
+			reject(err);
+		});
+	});
+}
 
 // 2. Get player information from holdet and merge into dataset
 function getPlayerStatistics() {
@@ -114,7 +172,7 @@ function getPlayerStatistics() {
 		getNumberOfStatisticsPages().then(page => {
 			var statsUrls = [];
 			for (let i = 0; i <= page; i++) {
-				statsUrls.push("https://www.holdet.dk/da/premier-league-fantasy-spring-2018/statistics?page=" + i);
+				statsUrls.push("https://www.holdet.dk/da/premier-league-fantasy-fall-2018/statistics?page=" + i);
 			}
 			return Promise.all(statsUrls.map(url => {return getPlayerStatsFromHoldetPage(url);}));
 		}).then(responses => {
@@ -128,7 +186,7 @@ function getPlayerStatistics() {
 
 function getNumberOfStatisticsPages() {
 	return new Promise((resolve, reject) => {
-		const firstStatsPage = "https://www.holdet.dk/da/premier-league-fantasy-spring-2018/statistics?page=0";
+		const firstStatsPage = "https://www.holdet.dk/da/premier-league-fantasy-fall-2018/statistics?page=0";
 		axios.get(firstStatsPage).then(response => {
 			const responseHtml = response.data;
 			const $ = cheerio.load(responseHtml);
@@ -139,6 +197,8 @@ function getNumberOfStatisticsPages() {
 		});
 	});
 }
+
+
 
 function getPlayerStatsFromHoldetPage(holdetUrl) {
 	return new Promise((resolve, reject) => {
