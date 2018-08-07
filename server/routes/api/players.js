@@ -101,6 +101,8 @@ module.exports = (app) => {
 					holdet_team: holdetPlayer.playerTeam || null,
 				}]
 
+				console.log(playerData);
+
 				insertData(playerData, schema).then(() => {
 			    const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
 			    res.json({
