@@ -138,6 +138,9 @@ module.exports = (app) => {
   })
 }
 
+const axios = require("axios");
+const cheerio = require("cheerio");
+
 // Create reusable function for upsert-like insert
 function insertData(data, cs) {
 	const conflictQuery = " ON CONFLICT (id) DO UPDATE SET " + cs.columns.map(x => {
