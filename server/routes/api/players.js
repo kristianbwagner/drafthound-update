@@ -84,9 +84,9 @@ module.exports = (app) => {
 
 		if(body.data !== undefined) {
 
-			getPlayerStatistics().then(playerData => {
+			getPlayerStatistics().then(playerStats => {
 
-				const findPlayers = playerData.filter(d => d.playerId === body.data.holdet_id) || [];
+				const findPlayers = playerStats.filter(d => d.playerId === body.data.holdet_id) || [];
 				const holdetPlayer = findPlayers[0];
 
 				const playerData = [{

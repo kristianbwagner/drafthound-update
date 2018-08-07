@@ -198,8 +198,6 @@ function getNumberOfStatisticsPages() {
 	});
 }
 
-
-
 function getPlayerStatsFromHoldetPage(holdetUrl) {
 	return new Promise((resolve, reject) => {
 		axios.get(holdetUrl).then(response => {
