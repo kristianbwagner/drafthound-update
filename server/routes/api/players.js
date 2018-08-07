@@ -83,49 +83,82 @@ module.exports = (app) => {
 
 		if(body.data !== undefined) {
 
-			getPlayerStatistics().then(playerStats => {
-
-				const findPlayers = playerStats.filter(d => d.playerId === body.data.holdet_id) || [];
-				const holdetPlayer = findPlayers[0];
+			if (body.data.holdet_id === "") {
 
 				const playerData = [{
 					id: playerId,
 					holdet_id: body.data.holdet_id,
 					is_injured: body.data.is_injured,
 					injury_description: body.data.injury_description,
-					holdet_url: holdetPlayer.playerUrl || null,
-					holdet_name: holdetPlayer.playerName || null,
-					holdet_position: holdetPlayer.playerPosition || null,
-					holdet_value: holdetPlayer.playerValue || null,
-					holdet_popularity: holdetPlayer.playerPopularity || null,
-					holdet_team: holdetPlayer.playerTeam || null,
+					holdet_url: null,
+					holdet_name: null,
+					holdet_position: null,
+					holdet_value: null,
+					holdet_popularity: null,
+					holdet_team: null,
 				}]
 
-				console.log(playerData);
-
 				insertData(playerData, schema).then(() => {
-			    const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
-			    res.json({
-			      success: true,
-			      execution_time: `${execuionTime}ms`,
-			      message: "Succesfully updated"
-			    })
+					const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
+					res.json({
+						success: true,
+						execution_time: `${execuionTime}ms`,
+						message: "Succesfully updated"
+					})
 				}).catch((error) => {
 					const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
 					res.json({
-			      success: false,
-			      execution_time: `${execuionTime}ms`,
-			      message: "Couln't update odds data"
-			    })
+						success: false,
+						execution_time: `${execuionTime}ms`,
+						message: "Couln't update odds data"
+					})
 				});
-			}).catch(err => {
-				const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
-				res.json({
-					success: false,
-					execution_time: `${execuionTime}ms`,
-					message: "Couln't update odds data"
+
+			} else {
+				getPlayerStatistics().then(playerStats => {
+
+					const findPlayers = playerStats.filter(d => d.playerId === body.data.holdet_id) || [];
+					const holdetPlayer = findPlayers[0];
+
+					const playerData = [{
+						id: playerId,
+						holdet_id: body.data.holdet_id,
+						is_injured: body.data.is_injured,
+						injury_description: body.data.injury_description,
+						holdet_url: holdetPlayer.playerUrl || null,
+						holdet_name: holdetPlayer.playerName || null,
+						holdet_position: holdetPlayer.playerPosition || null,
+						holdet_value: holdetPlayer.playerValue || null,
+						holdet_popularity: holdetPlayer.playerPopularity || null,
+						holdet_team: holdetPlayer.playerTeam || null,
+					}]
+
+					console.log(playerData);
+
+					insertData(playerData, schema).then(() => {
+				    const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
+				    res.json({
+				      success: true,
+				      execution_time: `${execuionTime}ms`,
+				      message: "Succesfully updated"
+				    })
+					}).catch((error) => {
+						const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
+						res.json({
+				      success: false,
+				      execution_time: `${execuionTime}ms`,
+				      message: "Couln't update odds data"
+				    })
+					});
+				}).catch(err => {
+					const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
+					res.json({
+						success: false,
+						execution_time: `${execuionTime}ms`,
+						message: "Couln't update odds data"
+					})
 				})
-			})
+			}
 
 		} else {
 			const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
