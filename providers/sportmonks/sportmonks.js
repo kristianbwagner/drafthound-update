@@ -18,17 +18,26 @@ class SportMonks {
 	get players() {
 		return new Promise((resolve, reject) => {
 			const requestUrl = this.createUrl("teams/season/" + this.seasonId);
+			const teamIds = [];
 			axios.get(requestUrl).then(response => {
 				const responseData = response.data || {};
 				const teamData = responseData.data;
 				const squadRequests = teamData.map(team => {
+					//console.log(this.createUrl("squad/season/" + this.seasonId + "/team/" + team.id, "include=player,position"));
+					teamIds.push(team.id);
 					return axios.get(this.createUrl("squad/season/" + this.seasonId + "/team/" + team.id, "include=player,position"));
 				});
 				return Promise.all(squadRequests);
 			}).then(responses => {
+				//console.log(teamIds);
 				let allPlayers = [];
-				responses.forEach(response => {
+				responses.forEach((response, responseIndex) => {
 					const responseData = response.data;
+					(responseData.data || []).forEach(d => {
+						const playerInfo = d.player || {};
+						const playerInfoData = playerInfo.data || {};
+						playerInfoData.team_id = teamIds[responseIndex];
+					})
 					allPlayers = allPlayers.concat(responseData.data);
 				});
 				resolve(allPlayers);

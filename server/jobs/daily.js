@@ -7,11 +7,11 @@ const premierLeague = sportmonks({
 	seasonId: 12962,
 	apiKey: "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8"
 });
-const Postgres = require("../../database/postgres/postgres.js");
-const Database = new Postgres({
-	connectionString: "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5",
-	ssl: true
-});
+// const Postgres = require("../../database/postgres/postgres.js");
+// const Database = new Postgres({
+// 	connectionString: "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5",
+// 	ssl: true
+// });
 
 const pgp = require('pg-promise')({
 	capSQL: true
@@ -102,6 +102,8 @@ getSportMonksPlayers().then(sportMonksPlayers => {
 		const holdetPlayerList = holdetPlayers.map(row => {return row.playerName;});
 		const outputData = [];
 		sportMonksPlayers.forEach(sportMonksPlayer => {
+			console.log(sportMonksPlayer.name, sportMonksPlayer.team_id);
+
 			const closestHoldetName = getClosestMatch(sportMonksPlayer.full_name, holdetPlayerList);
 			const holdetPlayerData = holdetPlayers[closestHoldetName.index];
 
@@ -139,10 +141,6 @@ getSportMonksPlayers().then(sportMonksPlayers => {
 				}
 			}
 		});
-
-		//const output = outputData.slice(0,260);
-		//console.log(output);
-
 		return insertData(outputData, playersSchema);
 	}).then(() => {
 		console.log("success");
