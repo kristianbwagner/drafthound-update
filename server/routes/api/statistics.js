@@ -305,19 +305,14 @@ function rollupStatistics(statistics, fixtures, teams, players, rollupConfig) {
 
 			game.player_outcome = game.outcome === "draw"
 				? "draw"
-				: game.outcome === "home team win" && findPlayer.team_id === fixture.home_team_id
+				: game.outcome === "home team win" && game.home_away === "home"
 					? "win"
-					: game.outcome === "away team win" && findPlayer.team_id === fixture.away_team_id
+					: game.outcome === "away team win" && game.home_away === "away"
 						? "win"
 						: "loss"
 		});
 
-		const sortedGames = player.games.sort((a, b) => a.clean_date - b.clean_date);
-
-    // Number of games filter
-		let games = gamesIncludedInStatistics >= sortedGames.length
-			? sortedGames
-			: sortedGames.slice(sortedGames.length - gamesIncludedInStatistics);
+		let games = player.games.sort((a, b) => a.clean_date - b.clean_date);
 
     // Home away filter
     if (homeAway === "away" || homeAway === "home") {
@@ -328,6 +323,10 @@ function rollupStatistics(statistics, fixtures, teams, players, rollupConfig) {
     if (favoriteUnderdog === "favorite" || favoriteUnderdog === "underdog") {
       games = games.filter(d => d.favorite_underdog === favoriteUnderdog);
     }
+
+		games = gamesIncludedInStatistics >= games.length
+			? games
+			: games.slice(games.length - gamesIncludedInStatistics);
 
 		player.gamesAvailableForStatistics = games.length;
 
