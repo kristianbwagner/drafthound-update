@@ -266,11 +266,12 @@ function getStatistics(rollupConfig) {
 
 				const gamesRequested = (rollupConfig || {}).gamesRequested || 0;
 				const numberOfGames = (statisticsPerPlayer[playerId].games || []).length;
-				statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);//drafthoundScore
 				if (gamesRequested > numberOfGames) {
 					statisticsPerPlayer[playerId].statistics.games_enough = false;
+					statisticsPerPlayer[playerId].statistics.drafthound_score = 0;
 				} else {
 					statisticsPerPlayer[playerId].statistics.games_enough = true;
+					statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);//drafthoundScore
 				}
         outputArray.push(statisticsPerPlayer[playerId]);
       }
