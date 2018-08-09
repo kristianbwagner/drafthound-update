@@ -234,7 +234,39 @@ function getStatistics(rollupConfig) {
             drafthoundScore += keyEvents * keyWeight;
           }
         }
-        statisticsPerPlayer[playerId].statistics.drafthound_score = drafthoundScore;
+
+
+				let gameDrafthoundScoreSum = 0;
+
+				// Drafthound score per game
+				const playerGames = statisticsPerPlayer[playerId].games || [];
+				playerGames.forEach(g => {
+					let gameCleansheetScore = 0;
+	        if (positionId && g.minutes_played >= 60) {
+	          const positionWeights = cleansheetScoreWeights[positionId] || {};
+	          for (const key in positionWeights) {
+	            const keyWeight = positionWeights[key] || 0;
+	            const keyEvents = g[key] || 0;
+	            gameCleansheetScore += keyEvents * keyWeight;
+	          }
+	        }
+					g.cleansheet_score = gameCleansheetScore
+					let gameDrafthoundScore = gameCleansheetScore;
+	        if (positionId) {
+	          const positionWeights = drafthoundScoreWeights[positionId] || {};
+	          for (const key in positionWeights) {
+	            const keyWeight = positionWeights[key] || 0;
+	            const keyEvents = g[key] || 0;
+	            gameDrafthoundScore += keyEvents * keyWeight;
+	          }
+	        }
+					g.drafthound_score = gameDrafthoundScore
+					gameDrafthoundScoreSum += gameDrafthoundScore;
+				})
+
+				const numberOfGames = (statisticsPerPlayer[playerId].games || []).length;
+        statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);//drafthoundScore
+				//statisticsPerPlayer[playerId].statistics.drafthound_score_avg = gameDrafthoundScoreSum / numberOfGames;
         outputArray.push(statisticsPerPlayer[playerId]);
       }
 
@@ -243,6 +275,8 @@ function getStatistics(rollupConfig) {
       const filteredOutput = sortedOutput.filter(d => d.statistics.team_id !== null && d.statistics.team_id !== undefined);
       const maxDrafthoundScore = filteredOutput[0].statistics.drafthound_score;
       const minDrafthoundScore = filteredOutput[filteredOutput.length-1].statistics.drafthound_score;
+
+			console.log(minDrafthoundScore, maxDrafthoundScore)
       const absMin = Math.abs(minDrafthoundScore);
       const drafthoundDelta = maxDrafthoundScore - minDrafthoundScore;
 
