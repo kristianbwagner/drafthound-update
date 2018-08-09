@@ -114,6 +114,7 @@ function getStatistics(rollupConfig) {
       const statisticsPerPlayer = rollupStatistics(statistics, fixtures, teams, playersPerId, rollupConfig);
 
 			// Add any players that dont have any statistics
+			// TO-DO put this logic into rollupStatistics instead
 			players.forEach(p => {
 				if(!statisticsPerPlayer.hasOwnProperty(p.id)){
 					statisticsPerPlayer[p.id] = {
