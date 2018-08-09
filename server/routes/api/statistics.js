@@ -177,8 +177,12 @@ function getStatistics(rollupConfig) {
         const teamId = playerData.team_id;
         if (teamId) {
           const teamObject = fixturesPerTeam[teamId] || {};
+
           const teamStatistics = teamObject.statistics || {};
           const avgGoalsConceded = teamStatistics.goals_conceded_avg;
+					const teamInfo = teamsPerId[teamId] || {};
+					const teamHoldetName = teamInfo.holdet_name || "";
+
           const fullName = (playerData.full_name || "").replace(/\s\s/g, " ");
           statisticsPerPlayer[playerId].statistics.team_goals_conceded_0 = avgGoalsConceded < 1 ? 1 : 0;
           statisticsPerPlayer[playerId].statistics.team_goals_conceded_1 = avgGoalsConceded >= 1 && avgGoalsConceded < 2 ? 1 : 0;
@@ -199,7 +203,7 @@ function getStatistics(rollupConfig) {
           statisticsPerPlayer[playerId].statistics.holdet_value = isNaN(playerData.holdet_value) ? null : +playerData.holdet_value;
           statisticsPerPlayer[playerId].statistics.holdet_popularity = isNaN(playerData.holdet_popularity) ? null : +playerData.holdet_popularity;
           statisticsPerPlayer[playerId].statistics.holdet_id = playerData.holdet_id || null;
-          statisticsPerPlayer[playerId].statistics.holdet_team = playerData.holdet_team || null;
+          statisticsPerPlayer[playerId].statistics.holdet_team = teamHoldetName;//playerData.holdet_team || null;
           statisticsPerPlayer[playerId].statistics.is_penalty_shooter = playerData.is_penalty_shooter === true ? 1 : 0;
         } else {
           // If they do not have a team id we discard them from the sample
