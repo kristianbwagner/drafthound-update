@@ -264,9 +264,14 @@ function getStatistics(rollupConfig) {
 					gameDrafthoundScoreSum += gameDrafthoundScore;
 				})
 
+				const gamesRequested = (rollupConfig || {}).gamesRequested || 0;
 				const numberOfGames = (statisticsPerPlayer[playerId].games || []).length;
-        statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);//drafthoundScore
-				//statisticsPerPlayer[playerId].statistics.drafthound_score_avg = gameDrafthoundScoreSum / numberOfGames;
+				statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);//drafthoundScore
+				if (gamesRequested > numberOfGames) {
+					statisticsPerPlayer[playerId].statistics.games_enough = false;
+				} else {
+					statisticsPerPlayer[playerId].statistics.games_enough = true;
+				}
         outputArray.push(statisticsPerPlayer[playerId]);
       }
 
@@ -275,8 +280,6 @@ function getStatistics(rollupConfig) {
       const filteredOutput = sortedOutput.filter(d => d.statistics.team_id !== null && d.statistics.team_id !== undefined);
       const maxDrafthoundScore = filteredOutput[0].statistics.drafthound_score;
       const minDrafthoundScore = filteredOutput[filteredOutput.length-1].statistics.drafthound_score;
-
-			console.log(minDrafthoundScore, maxDrafthoundScore)
       const absMin = Math.abs(minDrafthoundScore);
       const drafthoundDelta = maxDrafthoundScore - minDrafthoundScore;
 
