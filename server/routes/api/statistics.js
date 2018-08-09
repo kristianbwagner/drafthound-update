@@ -103,6 +103,8 @@ function getStatistics(rollupConfig) {
       const players = data[1].rows || [];
       const playersPerId = rollupPlayers(players);
 
+			//console.log(playersPerId);
+
 			// Teams rollup
 			const teams = data[3].rows || [];
 			const teamsPerId = rollupTeams(teams);
@@ -110,6 +112,53 @@ function getStatistics(rollupConfig) {
       // Statistics rollup
       const statistics = data[2].rows || [];
       const statisticsPerPlayer = rollupStatistics(statistics, fixtures, teams, playersPerId, rollupConfig);
+
+			// Add any players that dont have any statistics
+			players.forEach(p => {
+				if(!statisticsPerPlayer.hasOwnProperty(p.id)){
+					statisticsPerPlayer[p.id] = {
+						playerId: p.id,
+						games: [],
+						statistics: {
+							goals: 0,
+							goals_wide: 0,
+							goals_semi: 0,
+							goals_close: 0,
+							assists: 0,
+							assists_wide: 0,
+							assists_semi: 0,
+							assists_close: 0,
+							red_cards: 0,
+							yellow_cards: 0,
+							fouls_committed: 0,
+							fouls_drawn: 0,
+							shots: 0,
+							shots_on_goal: 0,
+							crosses: 0,
+							crosses_accuracy: 0,
+							passes: 0,
+							passes_accuracy: 0,
+							offsides: 0,
+							saves: 0,
+							penalties_scored: 0,
+							penalties_missed: 0,
+							penalties_saved: 0,
+							tackles: 0,
+							blocks: 0,
+							interceptions: 0,
+							clearances: 0,
+							minutes_played: 0,
+							possible_fouls: 0,
+							minutes_played_avg: 0,
+							penalty_opportunities: 0,
+							penalty_success_rate: 0,
+							possible_assists: 0
+						},
+						gamesIncludedInStatistics: 0,
+						gamesAvailableForStatistics: 0
+					}
+				};
+			})
 
       // Calculate drafthound score
       const outputArray = [];
@@ -186,6 +235,7 @@ function getStatistics(rollupConfig) {
       const minDrafthoundScore = filteredOutput[filteredOutput.length-1].statistics.drafthound_score;
       const absMin = Math.abs(minDrafthoundScore);
       const drafthoundDelta = maxDrafthoundScore - minDrafthoundScore;
+
       filteredOutput.forEach((player, index) => {
         const baseZero = player.statistics.drafthound_score + absMin;
         const weightedScore = (baseZero / drafthoundDelta) * 100;
