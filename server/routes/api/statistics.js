@@ -177,11 +177,32 @@ function getStatistics(rollupConfig) {
         const teamId = playerData.team_id;
         if (teamId) {
           const teamObject = fixturesPerTeam[teamId] || {};
-
           const teamStatistics = teamObject.statistics || {};
           const avgGoalsConceded = teamStatistics.goals_conceded_avg;
 					const teamInfo = teamsPerId[teamId] || {};
 					const teamHoldetName = teamInfo.holdet_name || "";
+					//console.log(playerData.holdet_position);
+
+					let playerHoldetPosition = playerData.holdet_position || playerData.position;
+					let playerPos = "";
+					let playerPosId = 0;
+
+					if (playerHoldetPosition === "Mål" || playerHoldetPosition === "Goalkeeper") {
+						playerPos = "Goalkeeper";
+						playerPosId = 1;
+					}
+					if (playerHoldetPosition === "Forsvar" || playerHoldetPosition === "Defender") {
+						playerPos = "Defender";
+						playerPosId = 2;
+					}
+					if (playerHoldetPosition === "Midtbane" || playerHoldetPosition === "Midfielder") {
+						playerPos = "Midfielder";
+						playerPosId = 3;
+					}
+					if (playerHoldetPosition === "Angreb" || playerHoldetPosition === "Attacker") {
+						playerPos = "Attacker";
+						playerPosId = 4;
+					}
 
           const fullName = (playerData.full_name || "").replace(/\s\s/g, " ");
           statisticsPerPlayer[playerId].statistics.team_goals_conceded_0 = avgGoalsConceded < 1 ? 1 : 0;
@@ -195,8 +216,8 @@ function getStatistics(rollupConfig) {
           statisticsPerPlayer[playerId].statistics.height = playerData.height || null;
           statisticsPerPlayer[playerId].statistics.weight = playerData.weight || null;
           statisticsPerPlayer[playerId].statistics.weight = playerData.weight || null;
-          statisticsPerPlayer[playerId].statistics.position_id = playerData.position_id || null;
-          statisticsPerPlayer[playerId].statistics.positon = playerData.position || null;
+          statisticsPerPlayer[playerId].statistics.position_id = playerPosId; //playerData.position_id || null;
+          statisticsPerPlayer[playerId].statistics.positon = playerPos; //playerData.position || null;
           statisticsPerPlayer[playerId].statistics.team_id = playerData.team_id || null;
           statisticsPerPlayer[playerId].statistics.is_injured = playerData.is_injured || null;
           statisticsPerPlayer[playerId].statistics.injury_description = playerData.injury_description || null;
