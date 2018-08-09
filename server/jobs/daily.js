@@ -35,34 +35,6 @@ function getClosestMatch(testValue, inArray) {
 
 //console.log(new Levenshtein("João Mário Naval da Costa Eduardo", "João Mário Noval da Costa Eduardo").distance);
 
-// Column schema for table
-const playersSchema = new pgp.helpers.ColumnSet([
-	{name: "id", def: null},
-	{name: "season_id", def: null},
-	{name: "created_at", def: null},
-	{name: "updated_at", def: null},
-	{name: "name", def: null},
-	{name: "full_name", def: null},
-	{name: "first_name", def: null},
-	{name: "last_name", def: null},
-	{name: "team_id", def: null},
-	{name: "position", def: null},
-	{name: "position_id", def: null},
-	{name: "birth_date", def: null},
-	{name: "birth_place", def: null},
-	{name: "nationality", def: null},
-	{name: "height", def: null},
-	{name: "weight", def: null},
-	{name: "is_injured", def: null},
-	{name: "holdet_url", def: null},
-	{name: "holdet_id", def: null},
-	{name: "holdet_name", def: null},
-	{name: "holdet_value", def: null},
-	{name: "holdet_team", def: null},
-	{name: "holdet_position", def: null},
-	{name: "holdet_popularity", def: null},
-], {table: "players"});
-
 // 1. Get general player information from sportmonks
 function getSportMonksPlayers() {
 	return new Promise((resolve, reject) => {
@@ -102,7 +74,6 @@ getSportMonksPlayers().then(sportMonksPlayers => {
 		const holdetPlayerList = holdetPlayers.map(row => {return row.playerName;});
 		const outputData = [];
 		sportMonksPlayers.forEach(sportMonksPlayer => {
-			console.log(sportMonksPlayer.name, sportMonksPlayer.team_id);
 
 			const closestHoldetName = getClosestMatch(sportMonksPlayer.full_name, holdetPlayerList);
 			const holdetPlayerData = holdetPlayers[closestHoldetName.index];
@@ -141,6 +112,35 @@ getSportMonksPlayers().then(sportMonksPlayers => {
 				}
 			}
 		});
+
+		const playersSchema = new pgp.helpers.ColumnSet([
+			{name: "id", def: null},
+			{name: "season_id", def: null},
+			{name: "updated_at", def: null},
+			{name: "name", def: null},
+			{name: "full_name", def: null},
+			{name: "first_name", def: null},
+			{name: "last_name", def: null},
+			{name: "team_id", def: null},
+			{name: "position", def: null},
+			{name: "position_id", def: null},
+			{name: "birth_date", def: null},
+			{name: "birth_place", def: null},
+			{name: "nationality", def: null},
+			{name: "height", def: null},
+			{name: "weight", def: null},
+			{name: "is_injured", def: null},
+			{name: "holdet_url", def: null},
+			//{name: "holdet_id", def: null},
+			{name: "holdet_name", def: null},
+			{name: "holdet_value", def: null},
+			{name: "holdet_team", def: null},
+			{name: "holdet_position", def: null},
+			{name: "holdet_popularity", def: null},
+		], {table: "players"});
+
+		//outputData.forEach(d => console.log(d.id, d.full_name, d.team_id));
+
 		return insertData(outputData, playersSchema);
 	}).then(() => {
 		console.log("success");

@@ -55,6 +55,15 @@ module.exports = (app) => {
       }
     });
   })
+
+	app.get("/api/statistics/clear-cache", (req, res) => {
+		const cacheKeys = statsCache.keys();
+		statsCache.del(cacheKeys, function( err, success ){
+			res.json({
+				deleted: cacheKeys
+			})
+		})
+	})
 }
 
 function queryStatistics(req, data){
