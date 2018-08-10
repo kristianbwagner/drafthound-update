@@ -437,6 +437,12 @@ function rollupStatistics(statistics, fixtures, teams, players, rollupConfig) {
 					: game.outcome === "away team win" && game.home_away === "away"
 						? "win"
 						: "loss"
+
+			const goalsConceded = game.home_away === "home" ? game.away_team_score : game.home_team_score;
+			game.team_goals_conceded = goalsConceded;
+			game.team_goals_conceded_0 = goalsConceded === 0 ? 1 : 0
+			game.team_goals_conceded_1 = goalsConceded === 1 ? 1 : 0
+			game.team_goals_conceded_2 = goalsConceded > 1 ? 1 : 0
 		});
 
 		let games = player.games.sort((a, b) => a.clean_date - b.clean_date);
