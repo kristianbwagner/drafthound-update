@@ -247,7 +247,6 @@ function getStatistics(rollupConfig) {
             cleansheetScore += keyEvents * keyWeight;
           }
         }
-        statisticsPerPlayer[playerId].statistics.cleansheet_score = cleansheetScore;
 
         // Calculate drafthound score
         let drafthoundScore = cleansheetScore;
@@ -262,6 +261,7 @@ function getStatistics(rollupConfig) {
 
 
 				let gameDrafthoundScoreSum = 0;
+				let gameCleansheetScoreSum = 0;
 
 				// Drafthound score per game
 				const playerGames = statisticsPerPlayer[playerId].games || [];
@@ -287,6 +287,7 @@ function getStatistics(rollupConfig) {
 	        }
 					g.drafthound_score = gameDrafthoundScore
 					gameDrafthoundScoreSum += gameDrafthoundScore;
+					gameCleansheetScoreSum += gameCleansheetScore;
 				})
 
 				const gamesRequested = (rollupConfig || {}).gamesRequested || 0;
@@ -294,10 +295,13 @@ function getStatistics(rollupConfig) {
 				if (gamesRequested > numberOfGames) {
 					statisticsPerPlayer[playerId].statistics.games_enough = false;
 					statisticsPerPlayer[playerId].statistics.drafthound_score = 0;
+					statisticsPerPlayer[playerId].statistics.cleansheet_score = 0
 				} else {
 					statisticsPerPlayer[playerId].statistics.games_enough = true;
-					statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);//drafthoundScore
+					statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);
+					statisticsPerPlayer[playerId].statistics.cleansheet_score = isNaN(gameCleansheetScoreSum / numberOfGames) ? 0 : (gameCleansheetScoreSum / numberOfGames);
 				}
+
         outputArray.push(statisticsPerPlayer[playerId]);
       }
 
