@@ -15,8 +15,8 @@ const db = pgp({
 });
 
 const queries = [
-	"SELECT * FROM statistics",
-	"SELECT * FROM players_old",
+	"SELECT * FROM statistics WHERE fixture_id > 10332760",
+	"SELECT * FROM players",
 	"SELECT * FROM fixtures"
 ];
 
@@ -84,8 +84,6 @@ Database.queryAll(queries).then(data => {
 			})
 		}
 	})
-
-	const testUpdates = updates.filter(d => d.id === "1710968-1061");
 
 	insertData(updates, schema).then(() => {
 		console.log("success");

@@ -83,10 +83,10 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const testId = 1711181;
-				const sampleIds = fixtureIds.filter(f => f === testId);
+				const sampleIds = fixtureIds.filter(f => f === 10332770 /*>= 10332761 && f <= 10332770*/);
 				return Promise.all(sampleIds.map(id => {
-					return axios.get(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined"));
+					console.log(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined"));
+					return axios.get(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined,bench"));
 				}));
 			}).then(responses => {
 				let allLineupData = [];
@@ -94,7 +94,9 @@ class SportMonks {
 					const responseData = response.data || {};
 					const fixtureData = responseData.data;
 					const lineupData = fixtureData.lineup.data;
+					const benchData = fixtureData.bench.data;
 					allLineupData = allLineupData.concat(lineupData);
+					allLineupData = allLineupData.concat(benchData);
 				});
 				resolve(allLineupData);
 			}).catch(error => {
@@ -112,8 +114,7 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const testId = 1710864;
-				const sampleIds = fixtureIds.filter(f => f <= testId);
+				const sampleIds = fixtureIds.filter(f => f >= 10332761 && f <= 10332770);
 				return Promise.all(sampleIds.map(id => {
 					return axios.get(this.createUrl("fixtures/" + id, "include=comments"));
 				}));

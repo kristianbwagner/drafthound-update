@@ -1,10 +1,10 @@
 const Postgres = require("../../../database/postgres/postgres.js");
 const Database = new Postgres({
-	connectionString: "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5",
+	connectionString: "postgres://gomhcbepfwkkeq:c12e3f58fd938bbbb0825806f1ac90a08cf415de754b2da8d1c4866cf2981faf@ec2-54-217-205-90.eu-west-1.compute.amazonaws.com:5432/dagkemjclktp71",
 	ssl: true
 });
 
-const query = "SELECT * FROM commentaries WHERE fixture_id < '1711163'";
+const query = "SELECT * FROM commentaries WHERE fixture_id = '10332761'";
 Database.query(query).then(data => {
 	const rowData = data.rows || [];
 	const output = {};

@@ -1,20 +1,24 @@
-const sportmonks = require("../../../providers/sportmonks/sportmonks.js");
-const premierLeague = sportmonks({
-	seasonId: 6397,
-	apiKey: "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8"
-});
+// Sportsmonks Instance
+const Sportmonks = require("../../../providers/sportmonks/sportmonks.js");
+const premierLeagueSportmonks = Sportmonks({seasonId: 12962, apiKey: "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8"});
+
+// Create postgres instance
+const pgp = require('pg-promise')({capSQL: true});
+const db = pgp({connectionString: "postgres://gomhcbepfwkkeq:c12e3f58fd938bbbb0825806f1ac90a08cf415de754b2da8d1c4866cf2981faf@ec2-54-217-205-90.eu-west-1.compute.amazonaws.com:5432/dagkemjclktp71",ssl: true});
 
 const Postgres = require("../../../database/postgres/postgres.js");
 const Database = new Postgres({
-	connectionString: "postgres://arryqiptdswjdh:ba3dc52dcf2380392e9ef18a1bc86820d8523a30d6e759c5d63ea68768bbd8b2@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dv5o41fic7um5",
+	connectionString: "postgres://gomhcbepfwkkeq:c12e3f58fd938bbbb0825806f1ac90a08cf415de754b2da8d1c4866cf2981faf@ec2-54-217-205-90.eu-west-1.compute.amazonaws.com:5432/dagkemjclktp71",
 	ssl: true
 });
 
 const timestamp = new Date().getTime();
-premierLeague.statistics.then((players) => {
-	const queries = [];
+console.log("> Updating statistics...");
+premierLeagueSportmonks.statistics.then((players) => {
+	const statisticsUpdates = [];
 	players.forEach((player) => {
 		const update = {
+			id: player.fixture_id + "-" + player.player_id,
 			fixture_id: player.fixture_id,
 			player_id: player.player_id,
 			created_at: timestamp,
@@ -41,16 +45,59 @@ premierLeague.statistics.then((players) => {
 			interceptions: player.stats.other.interceptions || 0,
 			clearances: player.stats.other.clearances || 0,
 			minutes_played: player.stats.other.minutes_played || 0,
+			home_away: null,
+			favorite_underdog: null,
 		};
-
-		queries.push(Database.table("statistics").find(player.fixture_id + "-" + player.player_id).update(update));
+		statisticsUpdates.push(update);
 	});
 
-	Database.queryAll(queries).then(() => {
-		console.log("Successfully updated.");
-	}).catch((err) => {
-		console.log(err);
-	});
-}).catch(err => {
-	console.log(err);
+	const updateSchema = new pgp.helpers.ColumnSet([
+		{name: "id", def: null},
+		{name: "fixture_id", def: null},
+		{name: "player_id", def: null},
+		{name: "created_at", def: null},
+		{name: "updated_at", def: null},
+		{name: "goals", def: null},
+		{name: "assists", def: null},
+		{name: "red_cards", def: null},
+		{name: "yellow_cards", def: null},
+		{name: "fouls_committed", def: null},
+		{name: "fouls_drawn", def: null},
+		{name: "shots", def: null},
+		{name: "shots_on_goal", def: null},
+		{name: "crosses", def: null},
+		{name: "crosses_accuracy", def: null},
+		{name: "passes", def: null},
+		{name: "passes_accuracy", def: null},
+		{name: "offsides", def: null},
+		{name: "saves", def: null},
+		{name: "penalties_scored", def: null},
+		{name: "penalties_missed", def: null},
+		{name: "penalties_saved", def: null},
+		{name: "tackles", def: null},
+		{name: "blocks", def: null},
+		{name: "interceptions", def: null},
+		{name: "clearances", def: null},
+		{name: "minutes_played", def: null},
+	], {table: "statistics"});
+
+	return insertData(statisticsUpdates, updateSchema);
+}).then(() => {
+	console.log("> Successfully updated!");
+}).catch((error) => {
+	console.log(error);
 });
+
+function insertData(data, cs) {
+	const conflictQuery = " ON CONFLICT (id) DO UPDATE SET " + cs.columns.map(x => {
+		return `${x.name} = EXCLUDED.${x.name}`;
+	}).join(', ');
+	const insert = pgp.helpers.insert(data, cs) + conflictQuery;
+	return new Promise((resolve, reject) => {
+		db.none(insert).then(() => {
+			resolve();
+		}).catch(err => {
+			reject(err);
+		});
+	});
+}

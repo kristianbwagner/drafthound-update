@@ -4,7 +4,13 @@
   "description": "Api for drafthound.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"fixtures": "node server/jobs/fixtures/fixtures",
+		"players": "node server/jobs/players/players",
+		"statistics": "node server/jobs/statistics/statistics",
+		"commentaries": "node server/jobs/commentaries/commentaries",
+		"merge-commentaries": "node server/jobs/commentaries/merge",
+		"merge-home-away": "node server/jobs/update-homeaway-underdog"
   },
   "author": "Kristian Wagner",
   "license": "ISC",
