@@ -347,7 +347,9 @@ function getStatistics(rollupConfig) {
       });
 
 			// Re-sort based on final dh scores
-			const finalOutput = filteredOutput.sort((a, b) => b.statistics.drafthound_score - a.statistics.drafthound_score);
+			const finalOutput = filteredOutput.sort((a, b) => b.statistics.drafthound_score - a.statistics.drafthound_score).filter(d => {
+				return d.statistics.holdet_id !== null;
+			});
 
       resolve(finalOutput)
     }).catch(err => reject(err));
