@@ -343,6 +343,7 @@ function getStatistics(rollupConfig) {
         player.statistics.drafthound_score_weighted = Math.round(weightedScore * 100) / 100;
 				player.statistics.drafthound_score_raw = player.statistics.drafthound_score;
 				player.statistics.drafthound_score = baseZero / player.statistics.next_game_odds;
+				player.statistics.drafthound_score_weighted = player.statistics.drafthound_score_weighted / player.statistics.next_game_odds;
       });
 
       resolve(filteredOutput)
