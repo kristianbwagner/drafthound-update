@@ -292,15 +292,22 @@ function getStatistics(rollupConfig) {
 
 				const gamesRequested = (rollupConfig || {}).gamesRequested || 0;
 				const numberOfGames = (statisticsPerPlayer[playerId].games || []).length;
-				if (gamesRequested > numberOfGames) {
-					statisticsPerPlayer[playerId].statistics.games_enough = false;
-					statisticsPerPlayer[playerId].statistics.drafthound_score = 0;
-					statisticsPerPlayer[playerId].statistics.cleansheet_score = 0
-				} else {
-					statisticsPerPlayer[playerId].statistics.games_enough = true;
-					statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);
-					statisticsPerPlayer[playerId].statistics.cleansheet_score = isNaN(gameCleansheetScoreSum / numberOfGames) ? 0 : (gameCleansheetScoreSum / numberOfGames);
-				}
+
+				// Only give players that have enough games a dh score
+				// if (gamesRequested > numberOfGames) {
+				// 	statisticsPerPlayer[playerId].statistics.games_enough = false;
+				// 	statisticsPerPlayer[playerId].statistics.drafthound_score = 0;
+				// 	statisticsPerPlayer[playerId].statistics.cleansheet_score = 0
+				// } else {
+				// 	statisticsPerPlayer[playerId].statistics.games_enough = true;
+				// 	statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);
+				// 	statisticsPerPlayer[playerId].statistics.cleansheet_score = isNaN(gameCleansheetScoreSum / numberOfGames) ? 0 : (gameCleansheetScoreSum / numberOfGames);
+				// }
+
+				// Give all players a dh score
+				statisticsPerPlayer[playerId].statistics.games_enough = true;
+				statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);
+				statisticsPerPlayer[playerId].statistics.cleansheet_score = isNaN(gameCleansheetScoreSum / numberOfGames) ? 0 : (gameCleansheetScoreSum / numberOfGames);
 
         outputArray.push(statisticsPerPlayer[playerId]);
       }

@@ -4,7 +4,7 @@ const Database = new Postgres({
 	ssl: true
 });
 
-const query = "SELECT * FROM commentaries WHERE fixture_id = '10332761'";
+const query = "SELECT * FROM commentaries WHERE fixture_id = '10332777' OR fixture_id = '10332776' OR fixture_id = '10332775' OR fixture_id = '10332774' OR fixture_id = '10332773' OR fixture_id = '10332772' OR fixture_id = '10332771'";
 Database.query(query).then(data => {
 	const rowData = data.rows || [];
 	const output = {};

@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(cors());
 
-
 // Routes
 require("./routes")(app);
 

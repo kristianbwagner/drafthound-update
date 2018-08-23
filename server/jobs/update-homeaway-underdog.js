@@ -15,7 +15,7 @@ const db = pgp({
 });
 
 const queries = [
-	"SELECT * FROM statistics WHERE fixture_id > 10332760",
+	"SELECT * FROM statistics WHERE fixture_id > 10332770",
 	"SELECT * FROM players",
 	"SELECT * FROM fixtures"
 ];

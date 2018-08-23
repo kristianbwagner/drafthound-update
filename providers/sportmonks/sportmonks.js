@@ -83,7 +83,7 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const sampleIds = fixtureIds.filter(f => f === 10332770 /*>= 10332761 && f <= 10332770*/);
+				const sampleIds = fixtureIds.filter(f => f >= 10332771 && f <= 10332780);
 				return Promise.all(sampleIds.map(id => {
 					console.log(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined"));
 					return axios.get(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined,bench"));
@@ -114,8 +114,9 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const sampleIds = fixtureIds.filter(f => f >= 10332761 && f <= 10332770);
+				const sampleIds = fixtureIds.filter(f => f >= 10332771 && f <= 10332780);
 				return Promise.all(sampleIds.map(id => {
+					console.log(this.createUrl("fixtures/" + id, "include=comments"));
 					return axios.get(this.createUrl("fixtures/" + id, "include=comments"));
 				}));
 			}).then(responses => {
