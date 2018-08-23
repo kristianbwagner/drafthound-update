@@ -99,7 +99,8 @@ function getStatistics(rollupConfig) {
       "SELECT * FROM fixtures WHERE status='FT'",
       "SELECT * FROM players",
       "SELECT * FROM statistics",
-			"SELECT * FROM teams"
+			"SELECT * FROM teams",
+			"SELECT * FROM fixtures WHERE status='NS'",
     ];
 
     Database.queryAll(queries).then(data => {
@@ -121,6 +122,10 @@ function getStatistics(rollupConfig) {
       // Statistics rollup
       const statistics = data[2].rows || [];
       const statisticsPerPlayer = rollupStatistics(statistics, fixtures, teams, playersPerId, rollupConfig);
+
+			// Games not started
+			const fixturesNotStarted = data[4].rows || [];
+      const fixturedNotStartedPerTeam = rollupFixtures(fixturesNotStarted);
 
 			// Add any players that dont have any statistics
 			// TO-DO put this logic into rollupStatistics instead
@@ -321,9 +326,23 @@ function getStatistics(rollupConfig) {
       const drafthoundDelta = maxDrafthoundScore - minDrafthoundScore;
 
       filteredOutput.forEach((player, index) => {
+
+				const teamIdNextGame = player.statistics.team_id;
+				if (teamIdNextGame !== undefined) {
+					const teamGames = (fixturedNotStartedPerTeam[teamIdNextGame] || {}).games || [];
+					const nextGame = teamGames[0] || {};
+					const nextOdds = teamIdNextGame === nextGame.home_team_id ? nextGame.home_team_odds : nextGame.away_team_odds;
+					player.statistics.next_game_odds = nextOdds;
+				} else {
+					player.statistics.next_game_odds = 1
+				}
+
         const baseZero = player.statistics.drafthound_score + absMin;
         const weightedScore = (baseZero / drafthoundDelta) * 100;
+				player.statistics.drafthound_score_base_zero = baseZero;
         player.statistics.drafthound_score_weighted = Math.round(weightedScore * 100) / 100;
+				player.statistics.drafthound_score_raw = player.statistics.drafthound_score;
+				player.statistics.drafthound_score = baseZero / player.statistics.next_game_odds;
       });
 
       resolve(filteredOutput)
