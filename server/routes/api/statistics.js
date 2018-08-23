@@ -346,7 +346,10 @@ function getStatistics(rollupConfig) {
 				player.statistics.drafthound_score_weighted = player.statistics.drafthound_score_weighted / player.statistics.next_game_odds;
       });
 
-      resolve(filteredOutput)
+			// Re-sort based on final dh scores
+			const finalOutput = filteredOutput.sort((a, b) => b.statistics.drafthound_score - a.statistics.drafthound_score);
+
+      resolve(finalOutput)
     }).catch(err => reject(err));
   })
 }
