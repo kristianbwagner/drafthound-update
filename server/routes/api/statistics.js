@@ -6,7 +6,10 @@ const Database = new Postgres({
   ssl: true
 });
 const drafthoundScoreWeights = require("../../config/dh-score-weights.json");
-const cleansheetScoreWeights = require("../../config/cs-score-weights.json");
+
+// NEW CHANGE
+const cleansheetScoreWeights = require("../../config/new-cs-score-weights.json");
+const gameScoreWeights = require("../../config/new-gm-score-weights.json");
 const NodeCache = require( "node-cache" );
 const statsCache = new NodeCache();
 
@@ -113,8 +116,6 @@ function getStatistics(rollupConfig) {
       const players = data[1].rows || [];
       const playersPerId = rollupPlayers(players);
 
-			//console.log(playersPerId);
-
 			// Teams rollup
 			const teams = data[3].rows || [];
 			const teamsPerId = rollupTeams(teams);
@@ -155,6 +156,7 @@ function getStatistics(rollupConfig) {
 							passes_accuracy: 0,
 							offsides: 0,
 							saves: 0,
+							possible_penalty_save: 0,
 							penalties_scored: 0,
 							penalties_missed: 0,
 							penalties_saved: 0,
@@ -180,13 +182,18 @@ function getStatistics(rollupConfig) {
       for (const playerId in statisticsPerPlayer) {
         const playerData = playersPerId[playerId] || {};
         const teamId = playerData.team_id;
-        if (teamId) {
+				
+				if (teamId) {
           const teamObject = fixturesPerTeam[teamId] || {};
           const teamStatistics = teamObject.statistics || {};
           const avgGoalsConceded = teamStatistics.goals_conceded_avg;
 					const teamInfo = teamsPerId[teamId] || {};
 					const teamHoldetName = teamInfo.holdet_name || "";
-					//console.log(playerData.holdet_position);
+          
+          // Get next game odds
+          const teamGames = (fixturedNotStartedPerTeam[teamId] || {}).games || [];
+          const nextGame = teamGames[0] || {};
+          const nextOdds = teamId === nextGame.home_team_id ? nextGame.home_team_odds : nextGame.away_team_odds;
 
 					let playerHoldetPosition = playerData.holdet_position || playerData.position;
 					let playerPos = "";
@@ -195,6 +202,7 @@ function getStatistics(rollupConfig) {
 					if (playerHoldetPosition === "Mål" || playerHoldetPosition === "Goalkeeper") {
 						playerPos = "Goalkeeper";
 						playerPosId = 1;
+						statisticsPerPlayer[playerId].statistics.possible_penalty_save = 1
 					}
 					if (playerHoldetPosition === "Forsvar" || playerHoldetPosition === "Defender") {
 						playerPos = "Defender";
@@ -210,9 +218,22 @@ function getStatistics(rollupConfig) {
 					}
 
           const fullName = (playerData.full_name || "").replace(/\s\s/g, " ");
+          
           statisticsPerPlayer[playerId].statistics.team_goals_conceded_0 = avgGoalsConceded < 1 ? 1 : 0;
-          statisticsPerPlayer[playerId].statistics.team_goals_conceded_1 = avgGoalsConceded >= 1 && avgGoalsConceded < 2 ? 1 : 0;
-          statisticsPerPlayer[playerId].statistics.team_goals_conceded_2 = avgGoalsConceded > 2 ? 1 : 0;
+					statisticsPerPlayer[playerId].statistics.team_goals_conceded_1 = avgGoalsConceded >= 1 && avgGoalsConceded < 2 ? 1 : 0;
+					
+					// NEW CHANGE
+					statisticsPerPlayer[playerId].statistics.team_goals_conceded_2 = avgGoalsConceded >= 2 && avgGoalsConceded < 3 ? 1 : 0;
+          statisticsPerPlayer[playerId].statistics.team_goals_conceded_3 = avgGoalsConceded >= 3 ? 1 : 0;
+
+          statisticsPerPlayer[playerId].statistics.game_score_0 = nextOdds < 1.30 ? 1 : 0;
+          statisticsPerPlayer[playerId].statistics.game_score_1 = nextOdds >= 1.31 && nextOdds <= 1.55 ? 1 : 0;
+          statisticsPerPlayer[playerId].statistics.game_score_2 = nextOdds >= 1.56 && nextOdds <= 1.90 ? 1 : 0;
+          statisticsPerPlayer[playerId].statistics.game_score_3 = nextOdds >= 1.91 && nextOdds <= 2.80 ? 1 : 0;
+          statisticsPerPlayer[playerId].statistics.game_score_4 = nextOdds >= 2.81 && nextOdds <= 3.80 ? 1 : 0;
+          statisticsPerPlayer[playerId].statistics.game_score_5 = nextOdds >= 3.81 && nextOdds <= 4.50 ? 1 : 0;
+          statisticsPerPlayer[playerId].statistics.game_score_6 = nextOdds >= 4.51 ? 1 : 0;
+
           statisticsPerPlayer[playerId].statistics.team_goals_conceded_avg = teamStatistics.goals_conceded_avg || 0;
           statisticsPerPlayer[playerId].statistics.team_goals_scored_avg = teamStatistics.goals_scored_avg || 0;
           statisticsPerPlayer[playerId].statistics.name = fullName || null;
@@ -240,79 +261,65 @@ function getStatistics(rollupConfig) {
 
         const playerStatistics = statisticsPerPlayer[playerId].statistics || {};
         const positionId = playerStatistics.position_id;
-        const avgMinutesPlayed = playerStatistics.minutes_played_avg;
 
-        // Calculate cleansheet score
-        let cleansheetScore = 0;
-        if (positionId && avgMinutesPlayed >= 60) {
-          const positionWeights = cleansheetScoreWeights[positionId] || {};
-          for (const key in positionWeights) {
-            const keyWeight = positionWeights[key] || 0;
-            const keyEvents = playerStatistics[key] || 0;
-            cleansheetScore += keyEvents * keyWeight;
+        // Calculate scores
+        let gameDrafthoundScoreSum = 0;
+        let gameCleansheetScoreSum = 0;
+ 
+        // Scores per game
+        const playerGames = statisticsPerPlayer[playerId].games || [];
+        playerGames.forEach(g => {
+          let gameCleansheetScore = 0;
+
+          if (positionId && g.minutes_played >= 60) {
+            const positionWeights = cleansheetScoreWeights[positionId] || {};
+            for (const key in positionWeights) {
+              const keyWeight = positionWeights[key] || 0;
+              const keyEvents = g[key] || 0;
+              gameCleansheetScore += keyEvents * keyWeight;
+            }
           }
-        }
+          
+          g.cleansheet_score = gameCleansheetScore
 
-        // Calculate drafthound score
-        let drafthoundScore = cleansheetScore;
+          let gameDrafthoundScore = gameCleansheetScore;
+          if (positionId) {
+            const positionWeights = drafthoundScoreWeights[positionId] || {};
+            for (const key in positionWeights) {
+              const keyWeight = positionWeights[key] || 0;
+              const keyEvents = g[key] || 0;
+              gameDrafthoundScore += keyEvents * keyWeight;
+            }
+          }
+
+          g.drafthound_score = gameDrafthoundScore
+
+          gameDrafthoundScoreSum += gameDrafthoundScore;
+          gameCleansheetScoreSum += gameCleansheetScore;
+        })
+
+        const numberOfGames = (statisticsPerPlayer[playerId].games || []).length;
+
+        // Give all players a dh score
+        statisticsPerPlayer[playerId].statistics.games_enough = true;
+        statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);
+        statisticsPerPlayer[playerId].statistics.cleansheet_score = isNaN(gameCleansheetScoreSum / numberOfGames) ? 0 : (gameCleansheetScoreSum / numberOfGames);
+
+        // One off scores
+        let gameScore = 0;
         if (positionId) {
-          const positionWeights = drafthoundScoreWeights[positionId] || {};
+          const positionWeights = gameScoreWeights[positionId] || {};
           for (const key in positionWeights) {
             const keyWeight = positionWeights[key] || 0;
-            const keyEvents = playerStatistics[key] || 0;
-            drafthoundScore += keyEvents * keyWeight;
+            const keyEvents = statisticsPerPlayer[playerId].statistics[key] || 0;
+            gameScore += keyEvents * keyWeight;
           }
         }
 
+        statisticsPerPlayer[playerId].statistics.game_score = gameScore;
 
-				let gameDrafthoundScoreSum = 0;
-				let gameCleansheetScoreSum = 0;
-
-				// Drafthound score per game
-				const playerGames = statisticsPerPlayer[playerId].games || [];
-				playerGames.forEach(g => {
-					let gameCleansheetScore = 0;
-	        if (positionId && g.minutes_played >= 60) {
-	          const positionWeights = cleansheetScoreWeights[positionId] || {};
-	          for (const key in positionWeights) {
-	            const keyWeight = positionWeights[key] || 0;
-	            const keyEvents = g[key] || 0;
-	            gameCleansheetScore += keyEvents * keyWeight;
-	          }
-	        }
-					g.cleansheet_score = gameCleansheetScore
-					let gameDrafthoundScore = gameCleansheetScore;
-	        if (positionId) {
-	          const positionWeights = drafthoundScoreWeights[positionId] || {};
-	          for (const key in positionWeights) {
-	            const keyWeight = positionWeights[key] || 0;
-	            const keyEvents = g[key] || 0;
-	            gameDrafthoundScore += keyEvents * keyWeight;
-	          }
-	        }
-					g.drafthound_score = gameDrafthoundScore
-					gameDrafthoundScoreSum += gameDrafthoundScore;
-					gameCleansheetScoreSum += gameCleansheetScore;
-				})
-
-				const gamesRequested = (rollupConfig || {}).gamesRequested || 0;
-				const numberOfGames = (statisticsPerPlayer[playerId].games || []).length;
-
-				// Only give players that have enough games a dh score
-				// if (gamesRequested > numberOfGames) {
-				// 	statisticsPerPlayer[playerId].statistics.games_enough = false;
-				// 	statisticsPerPlayer[playerId].statistics.drafthound_score = 0;
-				// 	statisticsPerPlayer[playerId].statistics.cleansheet_score = 0
-				// } else {
-				// 	statisticsPerPlayer[playerId].statistics.games_enough = true;
-				// 	statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);
-				// 	statisticsPerPlayer[playerId].statistics.cleansheet_score = isNaN(gameCleansheetScoreSum / numberOfGames) ? 0 : (gameCleansheetScoreSum / numberOfGames);
-				// }
-
-				// Give all players a dh score
-				statisticsPerPlayer[playerId].statistics.games_enough = true;
-				statisticsPerPlayer[playerId].statistics.drafthound_score = isNaN(gameDrafthoundScoreSum / numberOfGames) ? 0 : (gameDrafthoundScoreSum / numberOfGames);
-				statisticsPerPlayer[playerId].statistics.cleansheet_score = isNaN(gameCleansheetScoreSum / numberOfGames) ? 0 : (gameCleansheetScoreSum / numberOfGames);
+        // NEW CHANGE
+        statisticsPerPlayer[playerId].statistics.drafthound_score += statisticsPerPlayer[playerId].statistics.drafthound_score + gameScore;
 
         outputArray.push(statisticsPerPlayer[playerId]);
       }
@@ -341,9 +348,11 @@ function getStatistics(rollupConfig) {
         const weightedScore = (baseZero / drafthoundDelta) * 100;
 				player.statistics.drafthound_score_base_zero = baseZero;
         player.statistics.drafthound_score_weighted = Math.round(weightedScore * 100) / 100;
-				player.statistics.drafthound_score_raw = player.statistics.drafthound_score;
-				player.statistics.drafthound_score = baseZero / player.statistics.next_game_odds;
-				player.statistics.drafthound_score_weighted = player.statistics.drafthound_score_weighted / player.statistics.next_game_odds;
+        player.statistics.drafthound_score_raw = player.statistics.drafthound_score;
+        
+        // NEW CHANGE
+				player.statistics.drafthound_score = baseZero; /// player.statistics.next_game_odds;
+				player.statistics.drafthound_score_weighted = player.statistics.drafthound_score_weighted; // / player.statistics.next_game_odds;
       });
 
 			// Re-sort based on final dh scores
@@ -498,7 +507,7 @@ function rollupStatistics(statistics, fixtures, teams, players, rollupConfig) {
 		// Aggregate metrics
 		games.forEach(game => {
 			statisticsMetrics.forEach(metric => {
-				player.statistics[metric] += isNaN(game[metric]) ? 0 : game[metric] ;
+				player.statistics[metric] += isNaN(game[metric]) ? 0 : game[metric];
 			});
 		});
 

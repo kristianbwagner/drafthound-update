@@ -1,0 +1,535 @@
+id;name;url;team;position;value;growth;goals;assists;red;yellow;shots;saves;games_played;popularity;trend;index
+sokratis_papastathopoulos;Sokratis Papastathopoulos;/da/premier-league-fantasy-fall-2018/players/sokratis_papastathopoulos;Arsenal;Forsvar;4524000;24.000;-;-;-;2;-;-;100%;0.016;1,6%;2
+naby_keita;Naby Keita;/da/premier-league-fantasy-fall-2018/players/naby_keita;Liverpool;Midtbane;5728000;228.000;-;-;-;-;2;-;100%;0.12;12,0%;-57
+ademola_lookman;Ademola Lookman;/da/premier-league-fantasy-fall-2018/players/ademola_lookman;Everton;Angreb;1997000;-3.000;-;-;-;-;-;-;25%;0.014;1,4%;14
+leon_balogun;Leon Balogun;/da/premier-league-fantasy-fall-2018/players/leon_balogun;Brighton and Hove;Forsvar;2500000;-;-;-;-;1;-;-;50%;0.001;0,1%;-
+divock_origi;Divock Origi;/da/premier-league-fantasy-fall-2018/players/divock_origi;Liverpool;Angreb;3980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+philippe_sandler;Philippe Sandler;/da/premier-league-fantasy-fall-2018/players/philippe_sandler;Manchester City;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+frederico_rodrigues_de_paula_santos;Fred;/da/premier-league-fantasy-fall-2018/players/frederico_rodrigues_de_paula_santos;Manchester United;Midtbane;4463000;-37.000;-;-;-;1;-;-;75%;0.069;6,9%;-75
+diogo_dalot;Diogo Dalot;/da/premier-league-fantasy-fall-2018/players/diogo_dalot;Manchester United;Forsvar;3480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+lee_grant;Lee Grant;/da/premier-league-fantasy-fall-2018/players/lee_grant;Manchester United;Mål;3980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+fabio_henrique_tavares;Fabinho;/da/premier-league-fantasy-fall-2018/players/fabio_henrique_tavares;Liverpool;Midtbane;4480000;-20.000;-;-;-;-;-;-;0%;0.057;5,7%;-68
+stephan_lichtsteiner;Stephan Lichtsteiner;/da/premier-league-fantasy-fall-2018/players/stephan_lichtsteiner;Arsenal;Forsvar;3959000;-41.000;-;-;-;-;-;-;25%;0.005;0,5%;-2
+james_maddison;James Maddison;/da/premier-league-fantasy-fall-2018/players/james_maddison;Leicester City;Midtbane;4751000;251.000;1;1;-;-;2;-;100%;0.011;1,1%;15
+ricardo_pereira;Ricardo Pereira;/da/premier-league-fantasy-fall-2018/players/ricardo_pereira;Leicester City;Forsvar;3178000;178.000;-;1;-;-;1;-;100%;0.042;4,2%;11
+jonny_evans;Jonny Evans;/da/premier-league-fantasy-fall-2018/players/jonny_evans;Leicester City;Forsvar;2567000;67.000;-;-;-;1;-;-;25%;0.071;7,1%;-34
+ben_hamer;Ben Hamer;/da/premier-league-fantasy-fall-2018/players/ben_hamer;Huddersfield;Mål;2969000;-31.000;-;-;-;-;-;10;75%;0.002;0,2%;-5
+martin_dubravka;Martin Dubravka;/da/premier-league-fantasy-fall-2018/players/martin_dubravka;Newcastle;Mål;4080000;80.000;-;-;-;-;-;11;100%;0.009;0,9%;-1
+sung_yueng_ki;Sung-Yueng Ki;/da/premier-league-fantasy-fall-2018/players/sung_yueng_ki;Newcastle;Midtbane;2952000;-48.000;-;-;-;-;-;-;50%;0.001;0,1%;-
+vicente_guaita;Vicente Guaita;/da/premier-league-fantasy-fall-2018/players/vicente_guaita;Crystal Palace;Mål;3980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-3
+david_brooks;David Brooks;/da/premier-league-fantasy-fall-2018/players/david_brooks;Bournemouth;Midtbane;2605000;105.000;-;-;-;-;1;-;75%;0.002;0,2%;1
+issa_diop;Issa Diop;/da/premier-league-fantasy-fall-2018/players/issa_diop;West Ham;Forsvar;2847000;-153.000;-;-;-;1;-;-;50%;0.004;0,4%;-4
+lukasz_fabianski;Lukasz Fabianski;/da/premier-league-fantasy-fall-2018/players/lukasz_fabianski;West Ham;Mål;3993000;-7.000;-;-;-;-;-;21;100%;0.026;2,6%;-19
+adam_masina;Adam Masina;/da/premier-league-fantasy-fall-2018/players/adam_masina;Watford;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+marc_navarro;Marc Navarro;/da/premier-league-fantasy-fall-2018/players/marc_navarro;Watford;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+ben_wilmot;Ben Wilmot;/da/premier-league-fantasy-fall-2018/players/ben_wilmot;Watford;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;3
+ken_sema;Ken Sema;/da/premier-league-fantasy-fall-2018/players/ken_sema;Watford;Midtbane;3103000;103.000;-;-;-;-;1;-;75%;0.002;0,2%;-1
+florin_andone;Florin Andone;/da/premier-league-fantasy-fall-2018/players/florin_andone;Brighton and Hove;Angreb;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+jason_steele;Jason Steele;/da/premier-league-fantasy-fall-2018/players/jason_steele;Brighton and Hove;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+terence_kongolo;Terence Kongolo;/da/premier-league-fantasy-fall-2018/players/terence_kongolo;Huddersfield;Forsvar;2393000;-107.000;-;-;-;1;-;-;100%;0.003;0,3%;-1
+ramadan_sobhi;Ramadan Sobhi;/da/premier-league-fantasy-fall-2018/players/ramadan_sobhi;Huddersfield;Midtbane;2469000;-31.000;-;-;-;-;-;-;25%;0.001;0,1%;-1
+florent_hadergjonaj;Florent Hadergjonaj;/da/premier-league-fantasy-fall-2018/players/florent_hadergjonaj;Huddersfield;Forsvar;2968000;-32.000;-;-;-;1;-;-;100%;0.001;0,1%;-1
+juninho_bacuna;Juninho Bacuna;/da/premier-league-fantasy-fall-2018/players/juninho_bacuna;Huddersfield;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+jonas_lossl;Jonas Lössl;/da/premier-league-fantasy-fall-2018/players/jonas_lossl;Huddersfield;Mål;3606000;106.000;-;-;-;-;-;3;50%;0.04;4,0%;2
+stuart_armstrong;Stuart Armstrong;/da/premier-league-fantasy-fall-2018/players/stuart_armstrong;Southampton;Midtbane;2973000;-27.000;-;-;-;-;-;-;75%;0.002;0,2%;-
+diogo_jota;Diogo Jota;/da/premier-league-fantasy-fall-2018/players/diogo_jota;Wolverhampton;Angreb;4548000;48.000;-;-;-;-;-;-;100%;0.018;1,8%;-
+willy_boly;Willy Boly;/da/premier-league-fantasy-fall-2018/players/willy_boly;Wolverhampton;Forsvar;3258000;258.000;1;-;-;-;-;-;100%;0.012;1,2%;27
+leo_bonatini;Leo Bonatini;/da/premier-league-fantasy-fall-2018/players/leo_bonatini;Wolverhampton;Angreb;4121000;121.000;-;1;-;-;1;-;75%;0.001;0,1%;-
+raul_jimenez;Raul Jimenez;/da/premier-league-fantasy-fall-2018/players/raul_jimenez;Wolverhampton;Angreb;3703000;203.000;1;-;-;-;4;-;100%;0.012;1,2%;27
+rui_patricio;Rui Patricio;/da/premier-league-fantasy-fall-2018/players/rui_patricio;Wolverhampton;Mål;4193000;193.000;-;-;-;-;-;12;100%;0.054;5,4%;36
+ruben_vinagre;Ruben Vinagre;/da/premier-league-fantasy-fall-2018/players/ruben_vinagre;Wolverhampton;Forsvar;2581000;81.000;-;-;-;-;-;-;75%;0.001;0,1%;-1
+bobby_reid;Bobby Reid;/da/premier-league-fantasy-fall-2018/players/bobby_reid;Cardiff;Midtbane;4496000;-4.000;-;-;-;-;1;-;100%;0.001;0,1%;-
+alex_smithies;Alex Smithies;/da/premier-league-fantasy-fall-2018/players/alex_smithies;Cardiff;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+greg_cunningham;Greg Cunningham;/da/premier-league-fantasy-fall-2018/players/greg_cunningham;Cardiff;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+bernardo_fernandes_da_silva_junior;Bernardo Fernandes;/da/premier-league-fantasy-fall-2018/players/bernardo_fernandes_da_silva_junior;Brighton and Hove;Forsvar;2441000;-59.000;-;-;-;1;-;-;25%;0.001;0,1%;-1
+ben_foster;Ben Foster;/da/premier-league-fantasy-fall-2018/players/ben_foster;Watford;Mål;3809000;309.000;-;-;-;-;-;6;100%;0.144;14,4%;52
+jack_wilshere;Jack Wilshere;/da/premier-league-fantasy-fall-2018/players/jack_wilshere;West Ham;Midtbane;2866000;-134.000;-;-;-;2;1;-;100%;0.16;16,0%;-166
+lucas_torreira;Lucas Torreira;/da/premier-league-fantasy-fall-2018/players/lucas_torreira;Arsenal;Midtbane;3630000;130.000;-;1;-;-;1;-;100%;0.052;5,2%;18
+angus_gunn;Angus Gunn;/da/premier-league-fantasy-fall-2018/players/angus_gunn;Southampton;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+riyad_mahrez;Riyad Mahrez;/da/premier-league-fantasy-fall-2018/players/riyad_mahrez;Manchester City;Midtbane;7170000;170.000;-;-;-;-;1;-;100%;0.013;1,3%;2
+mattao_guendouzi;Matteo Guendouzi;/da/premier-league-fantasy-fall-2018/players/mattao_guendouzi;Arsenal;Midtbane;2024000;24.000;-;-;-;1;1;-;100%;0.165;16,5%;183
+jean_michael_seri;Jean Michael Seri;/da/premier-league-fantasy-fall-2018/players/jean_michael_seri;Fulham;Midtbane;3701000;201.000;1;1;-;-;1;-;100%;0.021;2,1%;-2
+maxime_le_marchand;Maxime Le Marchand;/da/premier-league-fantasy-fall-2018/players/maxime_le_marchand;Fulham;Forsvar;2496000;-4.000;-;-;-;1;-;-;100%;0.009;0,9%;-15
+xherdan_shaqiri;Xherdan Shaqiri;/da/premier-league-fantasy-fall-2018/players/xherdan_shaqiri;Liverpool;Midtbane;5074000;74.000;-;-;-;-;-;-;50%;0.05;5,0%;-26
+jorge_luiz_frello_filho;Jorginho;/da/premier-league-fantasy-fall-2018/players/jorge_luiz_frello_filho;Chelsea;Midtbane;4359000;359.000;1;-;-;-;1;-;100%;0.252;25,2%;74
+fabian_balbuena;Fabian Balbuena;/da/premier-league-fantasy-fall-2018/players/fabian_balbuena;West Ham;Forsvar;2378000;-122.000;-;-;-;1;1;-;100%;0.004;0,4%;-
+felipe_anderson;Felipe Anderson;/da/premier-league-fantasy-fall-2018/players/felipe_anderson;West Ham;Angreb;4446000;-54.000;-;1;-;1;2;-;100%;0.034;3,4%;-38
+david_button;David Button;/da/premier-league-fantasy-fall-2018/players/david_button;Brighton and Hove;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+yves_bissouma;Yves Bissouma;/da/premier-league-fantasy-fall-2018/players/yves_bissouma;Brighton and Hove;Midtbane;2495000;-5.000;-;-;-;-;-;-;75%;0.001;0,1%;-1
+alisson_ramses_becker;Alisson Becker;/da/premier-league-fantasy-fall-2018/players/alisson_ramses_becker;Liverpool;Mål;7515000;515.000;-;-;-;-;-;12;100%;0.03;3,0%;-7
+adama_diakhaby;Adama Diakhaby;/da/premier-league-fantasy-fall-2018/players/adama_diakhaby;Huddersfield;Angreb;2476000;-24.000;-;-;-;-;-;-;100%;0.002;0,2%;4
+danny_ward;Danny Ward;/da/premier-league-fantasy-fall-2018/players/danny_ward;Leicester City;Mål;4480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+kepa_arrizabalaga;Kepa Arrizabalaga;/da/premier-league-fantasy-fall-2018/players/kepa_arrizabalaga;Chelsea;Mål;6414000;414.000;-;-;-;-;-;8;100%;0.03;3,0%;26
+curtis_jones;Curtis Jones;/da/premier-league-fantasy-fall-2018/players/curtis_jones;Liverpool;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;1
+mateo_kovacic;Mateo Kovacic;/da/premier-league-fantasy-fall-2018/players/mateo_kovacic;Chelsea;Midtbane;3611000;111.000;-;-;-;1;-;-;75%;0.055;5,5%;106
+victor_camarasa;Victor Camarasa;/da/premier-league-fantasy-fall-2018/players/victor_camarasa;Cardiff;Midtbane;2582000;82.000;1;-;-;2;-;-;75%;0;0,0%;-
+leander_dendoncker;Leander Dendoncker;/da/premier-league-fantasy-fall-2018/players/leander_dendoncker;Wolverhampton;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+yerry_mina;Yerry Mina;/da/premier-league-fantasy-fall-2018/players/yerry_mina;Everton;Forsvar;3480000;-20.000;-;-;-;-;-;-;0%;0.032;3,2%;-32
+andre_gomes;Andre Gomes;/da/premier-league-fantasy-fall-2018/players/andre_gomes;Everton;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.007;0,7%;-6
+bernard_duarte;Bernard Duarte;/da/premier-league-fantasy-fall-2018/players/bernard_duarte;Everton;Midtbane;3497000;-3.000;-;-;-;-;-;-;25%;0.005;0,5%;-6
+sergio_rico;Sergio Rico;/da/premier-league-fantasy-fall-2018/players/sergio_rico;Fulham;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0.003;0,3%;-4
+andre_franck_zambo_anguissa;Andre Zambo Anguissa;/da/premier-league-fantasy-fall-2018/players/andre_franck_zambo_anguissa;Fulham;Midtbane;3059000;59.000;-;-;-;-;2;-;75%;0;0,0%;-1
+carlos_alberto_sanchez_moreno;Carlos Sanchez;/da/premier-league-fantasy-fall-2018/players/carlos_alberto_sanchez_moreno;West Ham;Midtbane;2929000;-71.000;-;-;-;-;-;-;75%;0.001;0,1%;-3
+luciano_vietto;Luciano Vietto;/da/premier-league-fantasy-fall-2018/players/luciano_vietto;Fulham;Angreb;4149000;149.000;-;2;-;-;-;-;75%;0.002;0,2%;-2
+joseph_edward_bryan;Joe Bryan;/da/premier-league-fantasy-fall-2018/players/joseph_edward_bryan;Fulham;Forsvar;2993000;-7.000;-;-;-;-;-;-;75%;0.001;0,1%;-2
+caglar_soyuncu;Caglar Soyuncu;/da/premier-league-fantasy-fall-2018/players/caglar_soyuncu;Leicester City;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+fernandez_federico;Federico Fernandez;/da/premier-league-fantasy-fall-2018/players/fernandez_federico;Newcastle;Forsvar;2432000;-68.000;-;-;-;1;-;-;50%;0;0,0%;2
+martin_montoya;Martin Montoya;/da/premier-league-fantasy-fall-2018/players/martin_montoya;Brighton and Hove;Forsvar;3041000;41.000;-;-;-;-;-;-;75%;0.001;0,1%;-
+jordan_ayew;Jordan Ayew;/da/premier-league-fantasy-fall-2018/players/jordan_ayew;Crystal Palace;Angreb;3469000;-31.000;-;-;-;-;1;-;25%;0.001;0,1%;1
+isaac_mbenza;Isaac Mbenza;/da/premier-league-fantasy-fall-2018/players/isaac_mbenza;Huddersfield;Midtbane;3497000;-3.000;-;-;-;-;-;-;25%;0;0,0%;-
+kurt_zouma;Kurt Zouma;/da/premier-league-fantasy-fall-2018/players/kurt_zouma;Everton;Forsvar;3516000;16.000;-;-;-;-;-;-;50%;0.004;0,4%;4
+sean_longstaff;Sean Longstaff;/da/premier-league-fantasy-fall-2018/players/sean_longstaff;Newcastle;Midtbane;1990000;-10.000;-;-;-;-;-;-;0%;0;0,0%;-
+dwight_mcneil;Dwight McNeil;/da/premier-league-fantasy-fall-2018/players/dwight_mcneil;Burnley;Angreb;1946000;-54.000;-;-;-;1;-;-;100%;0;0,0%;2
+petr_cech;Petr Cech;/da/premier-league-fantasy-fall-2018/players/petr_cech;Arsenal;Mål;5664000;164.000;-;-;-;-;-;20;100%;0.008;0,8%;1
+bernd_leno;Bernd Leno;/da/premier-league-fantasy-fall-2018/players/bernd_leno;Arsenal;Mål;5980000;-20.000;-;-;-;-;-;-;0%;0.008;0,8%;-7
+damian_emiliano_martinez;Damian Emiliano Martinez;/da/premier-league-fantasy-fall-2018/players/damian_emiliano_martinez;Arsenal;Mål;4980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+hector_bellerin;Hector Bellerin;/da/premier-league-fantasy-fall-2018/players/hector_bellerin;Arsenal;Forsvar;5114000;114.000;-;1;-;1;2;-;100%;0.007;0,7%;2
+laurent_koscielny;Laurent Koscielny;/da/premier-league-fantasy-fall-2018/players/laurent_koscielny;Arsenal;Forsvar;3480000;-20.000;-;-;-;-;-;-;0%;0.007;0,7%;-4
+rob_holding;Rob Holding;/da/premier-league-fantasy-fall-2018/players/rob_holding;Arsenal;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-1
+nacho_monreal;Nacho Monreal;/da/premier-league-fantasy-fall-2018/players/nacho_monreal;Arsenal;Forsvar;5743000;243.000;1;-;-;1;2;-;75%;0.002;0,2%;1
+shkodran_mustafi;Shkodran Mustafi;/da/premier-league-fantasy-fall-2018/players/shkodran_mustafi;Arsenal;Forsvar;4724000;224.000;1;-;-;1;3;-;100%;0.003;0,3%;3
+calum_chambers;Calum Chambers;/da/premier-league-fantasy-fall-2018/players/calum_chambers;Fulham;Forsvar;2998000;-2.000;-;-;-;-;-;-;100%;0.004;0,4%;-1
+carl_jenkinson;Carl Jenkinson;/da/premier-league-fantasy-fall-2018/players/carl_jenkinson;Arsenal;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.012;1,2%;-13
+konstantinos_mavropanos;Konstantinos Mavropanos;/da/premier-league-fantasy-fall-2018/players/konstantinos_mavropanos;Arsenal;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-5
+sead_kolasinac;Sead Kolasinac;/da/premier-league-fantasy-fall-2018/players/sead_kolasinac;Arsenal;Forsvar;3980000;-20.000;-;-;-;-;-;-;0%;0.003;0,3%;-2
+mohamed_elneny;Mohamed Elneny;/da/premier-league-fantasy-fall-2018/players/mohamed_elneny;Arsenal;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-3
+henrikh_mkhitaryan;Henrikh Mkhitaryan;/da/premier-league-fantasy-fall-2018/players/henrikh_mkhitaryan;Arsenal;Midtbane;5235000;235.000;1;1;-;-;1;-;100%;0.068;6,8%;-66
+aaron_ramsey;Aaron Ramsey;/da/premier-league-fantasy-fall-2018/players/aaron_ramsey;Arsenal;Midtbane;5598000;98.000;-;-;-;-;3;-;100%;0.007;0,7%;2
+mesut_ozil;Mesut Özil;/da/premier-league-fantasy-fall-2018/players/mesut_ozil;Arsenal;Midtbane;4513000;13.000;-;-;-;-;-;-;75%;0.14;14,0%;7
+ainsley_maitland_niles;Ainsley Maitland-Niles;/da/premier-league-fantasy-fall-2018/players/ainsley_maitland_niles;Arsenal;Midtbane;2459000;-41.000;-;-;-;-;-;-;25%;0.003;0,3%;-2
+granit_xhaka;Granit Xhaka;/da/premier-league-fantasy-fall-2018/players/granit_xhaka;Arsenal;Midtbane;4072000;72.000;-;1;-;3;1;-;100%;0.009;0,9%;-1
+alexandre_lacazette;Alexandre Lacazette;/da/premier-league-fantasy-fall-2018/players/alexandre_lacazette;Arsenal;Angreb;6796000;296.000;1;1;-;-;5;-;100%;0.044;4,4%;89
+pierre_emerick_aubameyang;Pierre-Emerick Aubameyang;/da/premier-league-fantasy-fall-2018/players/pierre_emerick_aubameyang;Arsenal;Angreb;8684000;184.000;1;-;-;-;3;-;100%;0.071;7,1%;-3
+alex_iwobi;Alex Iwobi;/da/premier-league-fantasy-fall-2018/players/alex_iwobi;Arsenal;Angreb;3670000;170.000;1;1;-;-;-;-;50%;0.022;2,2%;-64
+danny_welbeck;Danny Welbeck;/da/premier-league-fantasy-fall-2018/players/danny_welbeck;Arsenal;Angreb;4184000;184.000;1;-;-;-;1;-;50%;0.007;0,7%;1
+lucas_perez_martinez;Lucas Perez Martinez;/da/premier-league-fantasy-fall-2018/players/lucas_perez_martinez;West Ham;Angreb;3448000;-52.000;-;-;-;-;-;-;50%;0.002;0,2%;-3
+erik_durm;Erik Durm;/da/premier-league-fantasy-fall-2018/players/erik_durm;Huddersfield;Forsvar;2497000;-3.000;-;-;-;-;-;-;25%;0.003;0,3%;-2
+jannik_vestergaard;Jannik Vestergaard;/da/premier-league-fantasy-fall-2018/players/jannik_vestergaard;Southampton;Forsvar;3125000;125.000;-;-;-;1;-;-;75%;0.084;8,4%;17
+robert_kenedy;Kenedy;/da/premier-league-fantasy-fall-2018/players/robert_kenedy;Newcastle;Midtbane;3949000;-51.000;-;-;-;-;1;-;75%;0.005;0,5%;-1
+andriy_yarmolenko;Andriy Yarmolenko;/da/premier-league-fantasy-fall-2018/players/andriy_yarmolenko;West Ham;Angreb;4904000;-96.000;-;-;-;1;-;-;100%;0.006;0,6%;-6
+artur_boruc;Artur Boruc;/da/premier-league-fantasy-fall-2018/players/artur_boruc;Bournemouth;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+aaron_ramsdale;Aaron Ramsdale;/da/premier-league-fantasy-fall-2018/players/aaron_ramsdale;Bournemouth;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+asmir_begovic;Asmir Begovic;/da/premier-league-fantasy-fall-2018/players/asmir_begovic;Bournemouth;Mål;4218000;218.000;-;-;-;-;-;9;100%;0.016;1,6%;-
+simon_francis;Simon Francis;/da/premier-league-fantasy-fall-2018/players/simon_francis;Bournemouth;Forsvar;2605000;105.000;-;1;-;-;-;-;75%;0.002;0,2%;1
+steve_cook;Steve Cook;/da/premier-league-fantasy-fall-2018/players/steve_cook;Bournemouth;Forsvar;2898000;398.000;1;1;-;-;2;-;100%;0.021;2,1%;9
+nathan_ake;Nathan Ake;/da/premier-league-fantasy-fall-2018/players/nathan_ake;Bournemouth;Forsvar;3813000;313.000;1;-;-;-;-;-;100%;0.015;1,5%;6
+charlie_daniels;Charlie Daniels;/da/premier-league-fantasy-fall-2018/players/charlie_daniels;Bournemouth;Forsvar;3147000;147.000;-;-;-;1;-;-;75%;0.005;0,5%;-2
+adam_james_smith;Adam Smith;/da/premier-league-fantasy-fall-2018/players/adam_james_smith;Bournemouth;Forsvar;2594000;94.000;-;-;1;-;-;-;100%;0.002;0,2%;-
+tyrone_mings;Tyrone Mings;/da/premier-league-fantasy-fall-2018/players/tyrone_mings;Bournemouth;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-
+jack_simpson;Jack Simpson;/da/premier-league-fantasy-fall-2018/players/jack_simpson;Bournemouth;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+dan_gosling;Dan Gosling;/da/premier-league-fantasy-fall-2018/players/dan_gosling;Bournemouth;Midtbane;2558000;58.000;-;-;-;2;-;-;100%;0.008;0,8%;2
+andrew_surman;Andrew Surman;/da/premier-league-fantasy-fall-2018/players/andrew_surman;Bournemouth;Midtbane;3107000;107.000;-;-;-;-;-;-;75%;0.001;0,1%;-
+marc_pugh;Marc Pugh;/da/premier-league-fantasy-fall-2018/players/marc_pugh;Bournemouth;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+harry_arter;Harry Arter;/da/premier-league-fantasy-fall-2018/players/harry_arter;Cardiff;Midtbane;2447000;-53.000;-;-;-;3;1;-;75%;0.001;0,1%;-1
+lewis_cook;Lewis Cook;/da/premier-league-fantasy-fall-2018/players/lewis_cook;Bournemouth;Midtbane;2551000;51.000;-;-;-;-;-;-;75%;0.003;0,3%;-4
+junior_stanislas;Junior Stanislas;/da/premier-league-fantasy-fall-2018/players/junior_stanislas;Bournemouth;Midtbane;3980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+ryan_fraser;Ryan Fraser;/da/premier-league-fantasy-fall-2018/players/ryan_fraser;Bournemouth;Midtbane;3823000;323.000;1;1;-;-;2;-;100%;0.01;1,0%;19
+jordon_ibe;Jordon Ibe;/da/premier-league-fantasy-fall-2018/players/jordon_ibe;Bournemouth;Midtbane;3498000;-2.000;-;-;-;-;-;-;50%;0.003;0,3%;-3
+callum_wilson;Callum Wilson;/da/premier-league-fantasy-fall-2018/players/callum_wilson;Bournemouth;Angreb;4348000;348.000;2;1;-;-;3;-;100%;0.015;1,5%;10
+joshua_king;Joshua King;/da/premier-league-fantasy-fall-2018/players/joshua_king;Bournemouth;Angreb;4696000;196.000;1;-;-;1;1;-;100%;0.014;1,4%;-1
+jermain_defoe;Jermain Defoe;/da/premier-league-fantasy-fall-2018/players/jermain_defoe;Bournemouth;Angreb;3517000;17.000;-;-;-;-;-;-;25%;0.009;0,9%;-12
+lys_mousset;Lys Mousset;/da/premier-league-fantasy-fall-2018/players/lys_mousset;Bournemouth;Angreb;3023000;23.000;-;-;-;-;-;-;75%;0.001;0,1%;-
+mathew_ryan;Mathew Ryan;/da/premier-league-fantasy-fall-2018/players/mathew_ryan;Brighton and Hove;Mål;3592000;92.000;-;-;-;-;-;14;100%;0.011;1,1%;-7
+bruno_saltor;Bruno Saltor;/da/premier-league-fantasy-fall-2018/players/bruno_saltor;Brighton and Hove;Forsvar;1977000;-23.000;-;-;-;-;-;-;25%;0.001;0,1%;-1
+gaetan_bong;Gaetan Bong;/da/premier-league-fantasy-fall-2018/players/gaetan_bong;Brighton and Hove;Forsvar;2022000;22.000;-;-;-;-;-;-;100%;0.009;0,9%;-10
+lewis_dunk;Lewis Dunk;/da/premier-league-fantasy-fall-2018/players/lewis_dunk;Brighton and Hove;Forsvar;2519000;19.000;-;-;-;-;-;-;75%;0.002;0,2%;-1
+ezequiel_schelotto;Ezequiel Schelotto;/da/premier-league-fantasy-fall-2018/players/ezequiel_schelotto;Brighton and Hove;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+shane_duffy;Shane Duffy;/da/premier-league-fantasy-fall-2018/players/shane_duffy;Brighton and Hove;Forsvar;2672000;172.000;1;-;-;-;-;-;100%;0.006;0,6%;-8
+markus_suttner;Markus Suttner;/da/premier-league-fantasy-fall-2018/players/markus_suttner;Brighton and Hove;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+dale_stephens;Dale Stephens;/da/premier-league-fantasy-fall-2018/players/dale_stephens;Brighton and Hove;Midtbane;2482000;-18.000;-;-;-;2;-;-;100%;0.001;0,1%;-
+beram_kayal;Beram Kayal;/da/premier-league-fantasy-fall-2018/players/beram_kayal;Brighton and Hove;Midtbane;2009000;9.000;-;-;-;-;-;-;25%;0.001;0,1%;-1
+anthony_knockaert;Anthony Knockaert;/da/premier-league-fantasy-fall-2018/players/anthony_knockaert;Brighton and Hove;Midtbane;3122000;122.000;-;2;-;-;1;-;100%;0.003;0,3%;-
+solomon_march;Solomon March;/da/premier-league-fantasy-fall-2018/players/solomon_march;Brighton and Hove;Midtbane;2572000;72.000;-;1;-;-;-;-;100%;0.002;0,2%;-3
+davy_propper;Davy Pröpper;/da/premier-league-fantasy-fall-2018/players/davy_propper;Brighton and Hove;Midtbane;2492000;-8.000;-;-;-;1;-;-;100%;0.002;0,2%;-
+pascal_gross;Pascal Gross;/da/premier-league-fantasy-fall-2018/players/pascal_gross;Brighton and Hove;Midtbane;4661000;161.000;1;-;-;-;1;-;100%;0.007;0,7%;-8
+glenn_murray;Glenn Murray;/da/premier-league-fantasy-fall-2018/players/glenn_murray;Brighton and Hove;Angreb;4815000;315.000;3;-;-;2;1;-;100%;0.006;0,6%;7
+jose_izquierdo;Jose Izquierdo;/da/premier-league-fantasy-fall-2018/players/jose_izquierdo;Brighton and Hove;Angreb;3980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+jurgen_locadia;Jürgen Locadia;/da/premier-league-fantasy-fall-2018/players/jurgen_locadia;Brighton and Hove;Angreb;3043000;43.000;-;-;-;-;1;-;75%;0.001;0,1%;-1
+tom_heaton;Tom Heaton;/da/premier-league-fantasy-fall-2018/players/tom_heaton;Burnley;Mål;4480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+anders_lindegaard;Anders Lindegaard;/da/premier-league-fantasy-fall-2018/players/anders_lindegaard;Burnley;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+nick_pope;Nick Pope;/da/premier-league-fantasy-fall-2018/players/nick_pope;Burnley;Mål;4980000;-20.000;-;-;-;-;-;-;0%;0.006;0,6%;-8
+adam_legzdins;Adam Legzdins;/da/premier-league-fantasy-fall-2018/players/adam_legzdins;Burnley;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+matthew_lowton;Matthew Lowton;/da/premier-league-fantasy-fall-2018/players/matthew_lowton;Burnley;Forsvar;3505000;5.000;-;-;-;-;-;-;75%;0.003;0,3%;-4
+charlie_taylor;Charlie Taylor;/da/premier-league-fantasy-fall-2018/players/charlie_taylor;Burnley;Forsvar;1938000;-62.000;-;-;-;-;-;-;100%;0.006;0,6%;-5
+james_tarkowski;James Tarkowski;/da/premier-league-fantasy-fall-2018/players/james_tarkowski;Burnley;Forsvar;3256000;256.000;2;-;-;1;-;-;100%;0.029;2,9%;-14
+ben_mee;Ben Mee;/da/premier-league-fantasy-fall-2018/players/ben_mee;Burnley;Forsvar;3026000;26.000;-;1;-;-;-;-;100%;0.029;2,9%;-32
+stephen_ward;Stephen Ward;/da/premier-league-fantasy-fall-2018/players/stephen_ward;Burnley;Forsvar;3003000;3.000;-;-;-;1;1;-;75%;0.004;0,4%;-2
+phillip_bardsley;Phillip Bardsley;/da/premier-league-fantasy-fall-2018/players/phillip_bardsley;Burnley;Forsvar;1931000;-69.000;-;-;-;1;-;-;25%;0.002;0,2%;4
+kevin_long;Kevin Long;/da/premier-league-fantasy-fall-2018/players/kevin_long;Burnley;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-2
+jack_cork;Jack Cork;/da/premier-league-fantasy-fall-2018/players/jack_cork;Burnley;Midtbane;3406000;-94.000;-;-;-;1;-;-;100%;0.001;0,1%;-3
+robbie_brady;Robbie Brady;/da/premier-league-fantasy-fall-2018/players/robbie_brady;Burnley;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-2
+jeff_hendrick;Jeff Hendrick;/da/premier-league-fantasy-fall-2018/players/jeff_hendrick;Burnley;Midtbane;3081000;81.000;1;-;-;-;3;-;100%;0.002;0,2%;-3
+steven_defour;Steven Defour;/da/premier-league-fantasy-fall-2018/players/steven_defour;Burnley;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0.007;0,7%;-3
+johann_gudmundsson;Johann Gudmundsson;/da/premier-league-fantasy-fall-2018/players/johann_gudmundsson;Burnley;Midtbane;4029000;29.000;-;1;-;-;1;-;75%;0.004;0,4%;-7
+ashley_westwood;Ashley Westwood;/da/premier-league-fantasy-fall-2018/players/ashley_westwood;Burnley;Midtbane;2926000;-74.000;-;-;-;-;-;-;100%;0.001;0,1%;-
+aaron_lennon;Aaron Lennon;/da/premier-league-fantasy-fall-2018/players/aaron_lennon;Burnley;Midtbane;3436000;-64.000;-;-;-;-;1;-;100%;0.003;0,3%;-1
+sam_vokes;Sam Vokes;/da/premier-league-fantasy-fall-2018/players/sam_vokes;Burnley;Angreb;2980000;-20.000;-;-;-;-;2;-;100%;0.004;0,4%;2
+ashley_barnes;Ashley Barnes;/da/premier-league-fantasy-fall-2018/players/ashley_barnes;Burnley;Angreb;4470000;-30.000;-;-;-;-;1;-;100%;0.002;0,2%;1
+chris_wood3;Chris Wood;/da/premier-league-fantasy-fall-2018/players/chris_wood3;Burnley;Angreb;5464000;-36.000;-;-;-;-;3;-;100%;0.004;0,4%;-2
+daniel_ebenezer_agyei;Daniel Agyei;/da/premier-league-fantasy-fall-2018/players/daniel_ebenezer_agyei;Burnley;Angreb;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+josh_murphy;Josh Murphy;/da/premier-league-fantasy-fall-2018/players/josh_murphy;Cardiff;Midtbane;3003000;3.000;-;-;-;-;-;-;75%;0.001;0,1%;-2
+neil_etheridge;Neil Etheridge;/da/premier-league-fantasy-fall-2018/players/neil_etheridge;Cardiff;Mål;3413000;413.000;-;-;-;-;-;17;100%;0.007;0,7%;-1
+brian_murphy;Brian Murphy;/da/premier-league-fantasy-fall-2018/players/brian_murphy;Cardiff;Mål;2480000;-20.000;-;-;-;-;-;-;0%;0.004;0,4%;1
+lee_peltier;Lee Peltier;/da/premier-league-fantasy-fall-2018/players/lee_peltier;Cardiff;Forsvar;2441000;-59.000;-;-;-;1;-;-;25%;0.001;0,1%;-
+joe_bennett;Joe Bennett;/da/premier-league-fantasy-fall-2018/players/joe_bennett;Cardiff;Forsvar;2628000;128.000;-;1;-;-;-;-;100%;0.001;0,1%;1
+sean_morrison;Sean Morrison;/da/premier-league-fantasy-fall-2018/players/sean_morrison;Cardiff;Forsvar;3118000;118.000;-;1;-;1;1;-;100%;0.002;0,2%;-1
+bruno_ecuele_manga;Bruno Ecuele Manga;/da/premier-league-fantasy-fall-2018/players/bruno_ecuele_manga;Cardiff;Forsvar;2578000;78.000;-;-;-;-;-;-;100%;0;0,0%;-
+ashley_richards;Ashley 'Jazz' Richards;/da/premier-league-fantasy-fall-2018/players/ashley_richards;Cardiff;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+souleymane_bamba;Souleymane 'Sol' Bamba;/da/premier-league-fantasy-fall-2018/players/souleymane_bamba;Cardiff;Forsvar;2588000;88.000;-;-;-;-;1;-;100%;0.001;0,1%;-1
+matthew_connolly;Matthew Connolly;/da/premier-league-fantasy-fall-2018/players/matthew_connolly;Cardiff;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+callum_paterson;Callum Paterson;/da/premier-league-fantasy-fall-2018/players/callum_paterson;Cardiff;Forsvar;4053000;53.000;-;-;-;-;-;-;75%;0.001;0,1%;-
+joe_ralls;Joe Ralls;/da/premier-league-fantasy-fall-2018/players/joe_ralls;Cardiff;Midtbane;2978000;-22.000;-;-;-;-;-;-;100%;0.001;0,1%;-
+kadeem_harris;Kadeem Harris;/da/premier-league-fantasy-fall-2018/players/kadeem_harris;Cardiff;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+will_norris;Will Norris;/da/premier-league-fantasy-fall-2018/players/will_norris;Wolverhampton;Mål;2480000;-20.000;-;-;-;-;-;-;0%;0.004;0,4%;-1
+anthony_pilkington;Anthony Pilkington;/da/premier-league-fantasy-fall-2018/players/anthony_pilkington;Cardiff;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+aron_gunnarsson;Aron Gunnarsson;/da/premier-league-fantasy-fall-2018/players/aron_gunnarsson;Cardiff;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-1
+loic_damour;Loic Damour;/da/premier-league-fantasy-fall-2018/players/loic_damour;Cardiff;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+john_ruddy;John Ruddy;/da/premier-league-fantasy-fall-2018/players/john_ruddy;Wolverhampton;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+david_hoilett;David 'Junior' Hoilett;/da/premier-league-fantasy-fall-2018/players/david_hoilett;Cardiff;Midtbane;3941000;-59.000;-;-;-;1;-;-;75%;0.001;0,1%;-
+ryan_bennett;Ryan Bennett;/da/premier-league-fantasy-fall-2018/players/ryan_bennett;Wolverhampton;Forsvar;2588000;88.000;-;-;-;1;-;-;100%;0.002;0,2%;14
+conor_coady;Conor Coady;/da/premier-league-fantasy-fall-2018/players/conor_coady;Wolverhampton;Forsvar;2588000;88.000;-;-;-;1;-;-;100%;0.004;0,4%;17
+matt_doherty;Matt Doherty;/da/premier-league-fantasy-fall-2018/players/matt_doherty;Wolverhampton;Forsvar;3053000;53.000;-;-;-;-;2;-;100%;0.003;0,3%;10
+ethan_ebanks_landell;Ethan Ebanks-Landell;/da/premier-league-fantasy-fall-2018/players/ethan_ebanks_landell;Wolverhampton;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+kortney_hause;Kortney Hause;/da/premier-league-fantasy-fall-2018/players/kortney_hause;Wolverhampton;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+lee_tomlin;Lee Tomlin;/da/premier-league-fantasy-fall-2018/players/lee_tomlin;Cardiff;Angreb;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+dominic_iorfa;Dominic Iorfa;/da/premier-league-fantasy-fall-2018/players/dominic_iorfa;Wolverhampton;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;1
+daniel_carl_ward;Danny Ward;/da/premier-league-fantasy-fall-2018/players/daniel_carl_ward;Cardiff;Angreb;2579000;79.000;1;-;-;-;1;-;75%;0.002;0,2%;11
+kenneth_zohore;Kenneth Zohore;/da/premier-league-fantasy-fall-2018/players/kenneth_zohore;Cardiff;Angreb;3501000;1.000;-;-;-;-;-;-;75%;0.023;2,3%;-13
+nathaniel_mendez-laing;Nathaniel Mendez-Laing;/da/premier-league-fantasy-fall-2018/players/nathaniel_mendez-laing;Cardiff;Angreb;3513000;13.000;-;-;-;-;1;-;75%;0;0,0%;-
+gary_madine;Gary Madine;/da/premier-league-fantasy-fall-2018/players/gary_madine;Cardiff;Angreb;2956000;-44.000;-;-;-;-;-;-;50%;0;0,0%;-
+diego_rico;Diego Rico;/da/premier-league-fantasy-fall-2018/players/diego_rico;Bournemouth;Forsvar;2961000;-39.000;-;-;-;-;-;-;25%;0.001;0,1%;4
+ruben_neves;Ruben Neves;/da/premier-league-fantasy-fall-2018/players/ruben_neves;Wolverhampton;Midtbane;3243000;243.000;1;1;-;-;1;-;100%;0.153;15,3%;158
+romain_saiss;Romain Saiss;/da/premier-league-fantasy-fall-2018/players/romain_saiss;Wolverhampton;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;1
+joao_moutinho;Joao Moutinho;/da/premier-league-fantasy-fall-2018/players/joao_moutinho;Wolverhampton;Midtbane;3608000;108.000;-;1;-;-;-;-;100%;0.029;2,9%;16
+morgan_gibbs-white;Morgan Gibbs-White;/da/premier-league-fantasy-fall-2018/players/morgan_gibbs-white;Wolverhampton;Midtbane;1974000;-26.000;-;-;-;1;-;-;50%;0.003;0,3%;-3
+ivan_cavaleiro;Ivan Cavaleiro;/da/premier-league-fantasy-fall-2018/players/ivan_cavaleiro;Wolverhampton;Angreb;3980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-2
+helder_costa;Helder Costa;/da/premier-league-fantasy-fall-2018/players/helder_costa;Wolverhampton;Angreb;3058000;58.000;-;-;-;-;2;-;100%;0.004;0,4%;13
+wilfredo_caballero;Wilfredo Caballero;/da/premier-league-fantasy-fall-2018/players/wilfredo_caballero;Chelsea;Mål;5480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+antonio_rudiger;Antonio Rüdiger;/da/premier-league-fantasy-fall-2018/players/antonio_rudiger;Chelsea;Forsvar;4844000;344.000;-;-;-;-;2;-;100%;0.01;1,0%;12
+marcos_alonso_mendoza;Marcos Alonso Mendoza;/da/premier-league-fantasy-fall-2018/players/marcos_alonso_mendoza;Chelsea;Forsvar;6094000;594.000;1;2;-;1;1;-;100%;0.035;3,5%;88
+victor_moses;Victor Moses;/da/premier-league-fantasy-fall-2018/players/victor_moses;Chelsea;Forsvar;5527000;27.000;-;-;-;-;-;-;25%;0.003;0,3%;-1
+davide_zappacosta;Davide Zappacosta;/da/premier-league-fantasy-fall-2018/players/davide_zappacosta;Chelsea;Forsvar;3980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+gary_cahill;Gary Cahill;/da/premier-league-fantasy-fall-2018/players/gary_cahill;Chelsea;Forsvar;3980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-4
+andreas_christensen;Andreas Christensen;/da/premier-league-fantasy-fall-2018/players/andreas_christensen;Chelsea;Forsvar;3980000;-20.000;-;-;-;-;-;-;0%;0.045;4,5%;-45
+cesar_azpilicueta;Cesar Azpilicueta;/da/premier-league-fantasy-fall-2018/players/cesar_azpilicueta;Chelsea;Forsvar;5384000;384.000;-;1;-;-;1;-;100%;0.013;1,3%;4
+david_luiz;David Luiz;/da/premier-league-fantasy-fall-2018/players/david_luiz;Chelsea;Forsvar;4314000;314.000;-;-;-;1;1;-;100%;0.04;4,0%;58
+emerson_palmieri_dos_santos;Emerson Palmieri;/da/premier-league-fantasy-fall-2018/players/emerson_palmieri_dos_santos;Chelsea;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+cesc_fabregas;Cesc Fabregas;/da/premier-league-fantasy-fall-2018/players/cesc_fabregas;Chelsea;Midtbane;4480000;-20.000;-;-;-;-;-;-;0%;0.004;0,4%;-2
+danny_drinkwater;Danny Drinkwater;/da/premier-league-fantasy-fall-2018/players/danny_drinkwater;Chelsea;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.004;0,4%;-4
+ngolo_kante;N'Golo Kante;/da/premier-league-fantasy-fall-2018/players/ngolo_kante;Chelsea;Midtbane;4859000;359.000;1;-;-;1;-;-;100%;0.096;9,6%;14
+ross_barkley;Ross Barkley;/da/premier-league-fantasy-fall-2018/players/ross_barkley;Chelsea;Midtbane;3647000;147.000;-;-;-;-;1;-;75%;0.027;2,7%;-54
+eden_hazard;Eden Hazard;/da/premier-league-fantasy-fall-2018/players/eden_hazard;Chelsea;Midtbane;8560000;560.000;2;2;-;-;1;-;100%;0.08;8,0%;146
+pedro_rodriguez;Pedro Rodriguez;/da/premier-league-fantasy-fall-2018/players/pedro_rodriguez;Chelsea;Midtbane;5647000;647.000;3;-;-;-;3;-;100%;0.053;5,3%;190
+willian;Willian;/da/premier-league-fantasy-fall-2018/players/willian;Chelsea;Midtbane;6244000;244.000;-;1;-;-;1;-;100%;0.015;1,5%;-6
+ethan_ampadu;Ethan Ampadu;/da/premier-league-fantasy-fall-2018/players/ethan_ampadu;Chelsea;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+alvaro_borja_morata_martin;Alvaro Morata;/da/premier-league-fantasy-fall-2018/players/alvaro_borja_morata_martin;Chelsea;Angreb;5802000;302.000;1;-;-;-;2;-;100%;0.121;12,1%;10
+olivier_giroud;Olivier Giroud;/da/premier-league-fantasy-fall-2018/players/olivier_giroud;Chelsea;Angreb;6213000;213.000;-;1;-;-;2;-;75%;0.008;0,8%;5
+ruben_loftuscheek;Ruben Loftus-Cheek;/da/premier-league-fantasy-fall-2018/players/ruben_loftuscheek;Chelsea;Midtbane;4084000;84.000;-;-;-;-;-;-;50%;0.003;0,3%;2
+callum_hudson_odoi;Callum Hudson-Odoi;/da/premier-league-fantasy-fall-2018/players/callum_hudson_odoi;Chelsea;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.047;4,7%;-57
+julian_speroni;Julian Speroni;/da/premier-league-fantasy-fall-2018/players/julian_speroni;Crystal Palace;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+wayne_hennessey;Wayne Hennessey;/da/premier-league-fantasy-fall-2018/players/wayne_hennessey;Crystal Palace;Mål;3755000;255.000;-;-;-;-;-;20;100%;0.07;7,0%;15
+joel_ward;Joel Ward;/da/premier-league-fantasy-fall-2018/players/joel_ward;Crystal Palace;Forsvar;2450000;-50.000;-;-;-;-;-;-;50%;0.002;0,2%;-5
+patrick_van_aanholt;Patrick Van Aanholt;/da/premier-league-fantasy-fall-2018/players/patrick_van_aanholt;Crystal Palace;Forsvar;5080000;80.000;-;1;-;1;2;-;100%;0.004;0,4%;-2
+james_tomkins;James Tomkins;/da/premier-league-fantasy-fall-2018/players/james_tomkins;Crystal Palace;Forsvar;4088000;88.000;-;-;-;-;2;-;50%;0.001;0,1%;-1
+scott_dann;Scott Dann;/da/premier-league-fantasy-fall-2018/players/scott_dann;Crystal Palace;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+mamadou_sakho;Mamadou Sakho;/da/premier-league-fantasy-fall-2018/players/mamadou_sakho;Crystal Palace;Forsvar;3530000;30.000;-;-;-;-;-;-;100%;0.006;0,6%;-2
+jeff_schlupp;Jeff Schlupp;/da/premier-league-fantasy-fall-2018/players/jeff_schlupp;Crystal Palace;Forsvar;2696000;196.000;1;-;-;1;-;-;100%;0.049;4,9%;-29
+pape_ndiaye_souare;Pape Ndiaye  Souare;/da/premier-league-fantasy-fall-2018/players/pape_ndiaye_souare;Crystal Palace;Forsvar;2027000;27.000;-;-;-;-;-;-;25%;0.003;0,3%;-3
+aaron_wan_bissaka;Aaron Wan-Bissaka;/da/premier-league-fantasy-fall-2018/players/aaron_wan_bissaka;Crystal Palace;Forsvar;2027000;27.000;-;1;1;1;-;-;75%;0.126;12,6%;42
+martin_kelly;Martin Kelly;/da/premier-league-fantasy-fall-2018/players/martin_kelly;Crystal Palace;Forsvar;1942000;-58.000;-;-;-;-;-;-;50%;0.006;0,6%;1
+luka_milivojevic;Luka Milivojevic;/da/premier-league-fantasy-fall-2018/players/luka_milivojevic;Crystal Palace;Midtbane;3500000;-;-;-;-;-;2;-;100%;0.12;12,0%;-82
+andros_townsend;Andros Townsend;/da/premier-league-fantasy-fall-2018/players/andros_townsend;Crystal Palace;Midtbane;3016000;16.000;-;-;-;-;2;-;100%;0.04;4,0%;-45
+james_mcarthur;James McArthur;/da/premier-league-fantasy-fall-2018/players/james_mcarthur;Crystal Palace;Midtbane;3000000;-;-;-;-;-;2;-;100%;0.015;1,5%;-4
+jonathan_williams;Jonathan Williams;/da/premier-league-fantasy-fall-2018/players/jonathan_williams;Crystal Palace;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+jordon_mutch;Jordon Mutch;/da/premier-league-fantasy-fall-2018/players/jordon_mutch;Crystal Palace;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+sulay_kaikai;Sullay Kaikai;/da/premier-league-fantasy-fall-2018/players/sulay_kaikai;Crystal Palace;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+jason_puncheon;Jason Puncheon;/da/premier-league-fantasy-fall-2018/players/jason_puncheon;Crystal Palace;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.003;0,3%;-3
+jairo_riedewald;Jairo Riedewald;/da/premier-league-fantasy-fall-2018/players/jairo_riedewald;Crystal Palace;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+alexander_sorloth;Alexander Sørloth;/da/premier-league-fantasy-fall-2018/players/alexander_sorloth;Crystal Palace;Angreb;2482000;-18.000;-;-;-;-;-;-;100%;0.023;2,3%;-16
+wilfried_zaha;Wilfried Zaha;/da/premier-league-fantasy-fall-2018/players/wilfried_zaha;Crystal Palace;Angreb;5189000;189.000;2;-;-;2;2;-;75%;0.106;10,6%;-105
+christian_benteke;Christian Benteke;/da/premier-league-fantasy-fall-2018/players/christian_benteke;Crystal Palace;Angreb;4538000;38.000;-;-;-;-;5;-;100%;0.015;1,5%;-4
+connor_wickham;Connor Wickham;/da/premier-league-fantasy-fall-2018/players/connor_wickham;Crystal Palace;Angreb;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;3
+richarlison;Richarlison;/da/premier-league-fantasy-fall-2018/players/richarlison;Everton;Angreb;4327000;327.000;3;-;1;1;-;-;75%;0.186;18,6%;70
+jordan_pickford;Jordan Pickford;/da/premier-league-fantasy-fall-2018/players/jordan_pickford;Everton;Mål;5165000;165.000;-;-;-;-;-;15;100%;0.125;12,5%;-29
+maarten_stekelenburg;Maarten Stekelenburg;/da/premier-league-fantasy-fall-2018/players/maarten_stekelenburg;Everton;Mål;4480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-2
+mateusz_hewelt;Mateusz Hewelt;/da/premier-league-fantasy-fall-2018/players/mateusz_hewelt;Everton;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+morgan_schneiderlin;Morgan Schneiderlin;/da/premier-league-fantasy-fall-2018/players/morgan_schneiderlin;Everton;Midtbane;3107000;107.000;-;1;-;1;1;-;75%;0.012;1,2%;4
+leighton_baines;Leighton Baines;/da/premier-league-fantasy-fall-2018/players/leighton_baines;Everton;Forsvar;4098000;98.000;-;-;-;-;1;-;100%;0.011;1,1%;-13
+michael_keane;Michael Keane;/da/premier-league-fantasy-fall-2018/players/michael_keane;Everton;Forsvar;3301000;301.000;1;1;-;-;3;-;75%;0.071;7,1%;-100
+phil_jagielka;Phil Jagielka;/da/premier-league-fantasy-fall-2018/players/phil_jagielka;Everton;Forsvar;2957000;-43.000;-;-;1;-;-;-;25%;0.005;0,5%;-6
+theo_walcott;Theo Walcott;/da/premier-league-fantasy-fall-2018/players/theo_walcott;Everton;Angreb;4840000;340.000;2;1;-;-;-;-;100%;0.045;4,5%;-38
+cenk_tosun;Cenk Tosun;/da/premier-league-fantasy-fall-2018/players/cenk_tosun;Everton;Angreb;4690000;190.000;-;2;-;1;2;-;100%;0.031;3,1%;-14
+james_mccarthy;James McCarthy;/da/premier-league-fantasy-fall-2018/players/james_mccarthy;Everton;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.008;0,8%;-9
+idrissa_gana_gueye;Idrissa Gana Gueye;/da/premier-league-fantasy-fall-2018/players/idrissa_gana_gueye;Everton;Midtbane;3061000;61.000;-;-;-;1;1;-;75%;0.016;1,6%;-26
+gylfi_sigurdsson;Gylfi Sigurdsson;/da/premier-league-fantasy-fall-2018/players/gylfi_sigurdsson;Everton;Midtbane;4126000;126.000;-;1;-;1;-;-;100%;0.118;11,8%;-28
+oumar_niasse;Oumar Niasse;/da/premier-league-fantasy-fall-2018/players/oumar_niasse;Everton;Angreb;3551000;51.000;-;-;-;-;-;-;75%;0.002;0,2%;-
+seamus_coleman;Seamus Coleman;/da/premier-league-fantasy-fall-2018/players/seamus_coleman;Everton;Forsvar;4100000;100.000;-;-;-;-;1;-;100%;0.006;0,6%;-
+tom_davies;Tom Davies;/da/premier-league-fantasy-fall-2018/players/tom_davies;Everton;Midtbane;3539000;39.000;-;-;-;1;-;-;75%;0.006;0,6%;-1
+kieran_dowell;Kieran Dowell;/da/premier-league-fantasy-fall-2018/players/kieran_dowell;Everton;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+dominic_calvert-lewin;Dominic Calvert-Lewin;/da/premier-league-fantasy-fall-2018/players/dominic_calvert-lewin;Everton;Angreb;3168000;168.000;1;-;-;-;-;-;75%;0.007;0,7%;20
+mason_holgate;Mason Holgate;/da/premier-league-fantasy-fall-2018/players/mason_holgate;Everton;Forsvar;2560000;60.000;-;-;-;1;-;-;100%;0.045;4,5%;-11
+brendan_galloway;Brendan Galloway;/da/premier-league-fantasy-fall-2018/players/brendan_galloway;Everton;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-3
+jonjoe_kenny;Jonjoe Kenny;/da/premier-league-fantasy-fall-2018/players/jonjoe_kenny;Everton;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+beni_baningime;Beni Baningime;/da/premier-league-fantasy-fall-2018/players/beni_baningime;Everton;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+tyias_browning;Tyias Browning;/da/premier-league-fantasy-fall-2018/players/tyias_browning;Everton;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+fabricio_agosto;Fabricio Agosto;/da/premier-league-fantasy-fall-2018/players/fabricio_agosto;Fulham;Mål;3009000;9.000;-;-;-;-;-;15;50%;0.009;0,9%;-21
+marcus_bettinelli;Marcus Bettinelli;/da/premier-league-fantasy-fall-2018/players/marcus_bettinelli;Fulham;Mål;2657000;157.000;-;-;-;1;-;3;50%;0.043;4,3%;1
+denis_odoi;Denis Odoi;/da/premier-league-fantasy-fall-2018/players/denis_odoi;Fulham;Forsvar;2562000;62.000;-;-;-;-;-;-;50%;0.001;0,1%;-2
+tim_ream;Tim Ream;/da/premier-league-fantasy-fall-2018/players/tim_ream;Fulham;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+cyrus_christie;Cyrus Christie;/da/premier-league-fantasy-fall-2018/players/cyrus_christie;Fulham;Forsvar;2458000;-42.000;-;-;-;-;1;-;50%;0.001;0,1%;-2
+ryan_sessegnon;Ryan Sessegnon;/da/premier-league-fantasy-fall-2018/players/ryan_sessegnon;Fulham;Midtbane;4560000;60.000;-;1;-;-;3;-;100%;0.036;3,6%;-24
+kevin_mcdonald;Kevin McDonald;/da/premier-league-fantasy-fall-2018/players/kevin_mcdonald;Fulham;Midtbane;2513000;13.000;-;-;-;1;-;-;75%;0.001;0,1%;-1
+neeskens_kebano;Neeskens Kebano;/da/premier-league-fantasy-fall-2018/players/neeskens_kebano;Fulham;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+stefan_johansen;Stefan Johansen;/da/premier-league-fantasy-fall-2018/players/stefan_johansen;Fulham;Midtbane;3437000;-63.000;-;-;-;1;-;-;75%;0.001;0,1%;-1
+tom_cairney;Tom Cairney;/da/premier-league-fantasy-fall-2018/players/tom_cairney;Fulham;Midtbane;3561000;61.000;-;1;-;-;1;-;75%;0.003;0,3%;-1
+ibrahima_cisse;Ibrahima Cisse;/da/premier-league-fantasy-fall-2018/players/ibrahima_cisse;Fulham;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-2
+floyd_ayite;Floyd Ayite;/da/premier-league-fantasy-fall-2018/players/floyd_ayite;Fulham;Angreb;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+aboubakar_kamara;Aboubakar Kamara;/da/premier-league-fantasy-fall-2018/players/aboubakar_kamara;Fulham;Angreb;3452000;-48.000;-;-;-;-;1;-;50%;0.001;0,1%;-
+ryan_schofield;Ryan Schofield;/da/premier-league-fantasy-fall-2018/players/ryan_schofield;Huddersfield;Mål;2480000;-20.000;-;-;-;-;-;-;0%;0.007;0,7%;2
+thomas_george_smith;Tommy Smith;/da/premier-league-fantasy-fall-2018/players/thomas_george_smith;Huddersfield;Forsvar;1939000;-61.000;-;-;-;-;-;-;25%;0.002;0,2%;2
+chris_lowe;Chris Löwe;/da/premier-league-fantasy-fall-2018/players/chris_lowe;Huddersfield;Forsvar;2429000;-71.000;-;-;-;-;-;-;75%;0.001;0,1%;-
+mathias_zanka_joergensen;Mathias Zanka Jørgensen;/da/premier-league-fantasy-fall-2018/players/mathias_zanka_joergensen;Huddersfield;Forsvar;3009000;9.000;-;-;-;1;-;-;75%;0.053;5,3%;-10
+christopher_schindler;Christopher Schindler;/da/premier-league-fantasy-fall-2018/players/christopher_schindler;Huddersfield;Forsvar;2458000;-42.000;-;-;-;2;1;-;100%;0.001;0,1%;1
+jon_gorenc_stankovic;Jon Gorenc Stankovic;/da/premier-league-fantasy-fall-2018/players/jon_gorenc_stankovic;Huddersfield;Forsvar;2089000;89.000;1;-;-;-;-;-;25%;0.001;0,1%;-
+jonathan_hogg;Jonathan Hogg;/da/premier-league-fantasy-fall-2018/players/jonathan_hogg;Huddersfield;Midtbane;2410000;-90.000;-;-;1;-;-;-;50%;0;0,0%;-
+philip_billing;Philip Billing;/da/premier-league-fantasy-fall-2018/players/philip_billing;Huddersfield;Midtbane;2023000;23.000;1;-;-;2;-;-;100%;0.023;2,3%;19
+elias_kachunga;Elias Kachunga;/da/premier-league-fantasy-fall-2018/players/elias_kachunga;Huddersfield;Midtbane;2507000;7.000;-;-;-;-;1;-;25%;0;0,0%;-
+aaron_mooy;Aaron Mooy;/da/premier-league-fantasy-fall-2018/players/aaron_mooy;Huddersfield;Midtbane;2989000;-11.000;-;-;-;-;1;-;75%;0.019;1,9%;-9
+rajiv_van_la_parra;Rajiv van La Parra;/da/premier-league-fantasy-fall-2018/players/rajiv_van_la_parra;Huddersfield;Midtbane;3016000;16.000;-;-;-;-;-;-;50%;0.001;0,1%;-
+alex_pritchard;Alex Pritchard;/da/premier-league-fantasy-fall-2018/players/alex_pritchard;Huddersfield;Midtbane;2436000;-64.000;-;-;-;-;1;-;50%;0.001;0,1%;-1
+collin_quaner;Collin Quaner;/da/premier-league-fantasy-fall-2018/players/collin_quaner;Huddersfield;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+abdelhamid_sabiri;Abdelhamid Sabiri;/da/premier-league-fantasy-fall-2018/players/abdelhamid_sabiri;Huddersfield;Midtbane;1963000;-37.000;-;-;-;-;-;-;25%;0.001;0,1%;3
+laurent_depoitre;Laurent Depoitre;/da/premier-league-fantasy-fall-2018/players/laurent_depoitre;Huddersfield;Angreb;2976000;-24.000;-;-;-;-;1;-;100%;0.001;0,1%;-3
+steve_mounie;Steve Mounie;/da/premier-league-fantasy-fall-2018/players/steve_mounie;Huddersfield;Angreb;3536000;36.000;-;1;-;-;4;-;100%;0.003;0,3%;-
+daniel_williams_89;Danny Williams;/da/premier-league-fantasy-fall-2018/players/daniel_williams_89;Huddersfield;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+kasper_schmeichel;Kasper Schmeichel;/da/premier-league-fantasy-fall-2018/players/kasper_schmeichel;Leicester City;Mål;5213000;213.000;-;-;-;-;-;14;100%;0.157;15,7%;-10
+eldin_jakupovic;Eldin Jakupovic;/da/premier-league-fantasy-fall-2018/players/eldin_jakupovic;Leicester City;Mål;3980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+danny_simpson;Danny Simpson;/da/premier-league-fantasy-fall-2018/players/danny_simpson;Leicester City;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+ben_chilwell;Ben Chilwell;/da/premier-league-fantasy-fall-2018/players/ben_chilwell;Leicester City;Forsvar;3148000;148.000;-;-;-;-;3;-;100%;0.004;0,4%;3
+wes_morgan;Wes Morgan;/da/premier-league-fantasy-fall-2018/players/wes_morgan;Leicester City;Forsvar;2511000;11.000;-;-;-;-;-;-;75%;0.008;0,8%;18
+harry_maguire;Harry Maguire;/da/premier-league-fantasy-fall-2018/players/harry_maguire;Leicester City;Forsvar;3758000;258.000;1;-;-;2;-;-;100%;0.152;15,2%;12
+christian_fuchs;Christian Fuchs;/da/premier-league-fantasy-fall-2018/players/christian_fuchs;Leicester City;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-1
+yohan_benalouane;Yohan Benalouane;/da/premier-league-fantasy-fall-2018/players/yohan_benalouane;Leicester City;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+josh_knight;Josh Knight;/da/premier-league-fantasy-fall-2018/players/josh_knight;Leicester City;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+sam_hughes;Sam Hughes;/da/premier-league-fantasy-fall-2018/players/sam_hughes;Leicester City;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+callum_elder;Callum Elder;/da/premier-league-fantasy-fall-2018/players/callum_elder;Leicester City;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+demarai_gray;Demarai Gray;/da/premier-league-fantasy-fall-2018/players/demarai_gray;Leicester City;Midtbane;3713000;213.000;1;-;-;-;3;-;100%;0.01;1,0%;22
+marc_albrighton;Marc Albrighton;/da/premier-league-fantasy-fall-2018/players/marc_albrighton;Leicester City;Midtbane;3615000;115.000;-;1;-;-;-;-;75%;0.004;0,4%;1
+adrien_silva;Adrien Silva;/da/premier-league-fantasy-fall-2018/players/adrien_silva;Leicester City;Midtbane;2006000;6.000;-;-;-;-;-;-;50%;0.143;14,3%;-145
+daniel_amartey;Daniel Amartey;/da/premier-league-fantasy-fall-2018/players/daniel_amartey;Leicester City;Midtbane;2042000;42.000;-;-;-;1;1;-;100%;0.008;0,8%;3
+vicente_iborra;Vicente Iborra;/da/premier-league-fantasy-fall-2018/players/vicente_iborra;Leicester City;Midtbane;2979000;-21.000;-;-;-;-;-;-;25%;0.001;0,1%;-
+matthew_james;Matthew James;/da/premier-league-fantasy-fall-2018/players/matthew_james;Leicester City;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;1
+onyinye_wilfred_ndidi;Onyinye Wilfred Ndidi;/da/premier-league-fantasy-fall-2018/players/onyinye_wilfred_ndidi;Leicester City;Midtbane;3058000;58.000;-;-;-;1;1;-;100%;0.007;0,7%;-4
+hamza_choudhury;Hamza Choudhury;/da/premier-league-fantasy-fall-2018/players/hamza_choudhury;Leicester City;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+andy_king;Andy King;/da/premier-league-fantasy-fall-2018/players/andy_king;Leicester City;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;1
+nampalys_mendy;Nampalys Mendy;/da/premier-league-fantasy-fall-2018/players/nampalys_mendy;Leicester City;Midtbane;2057000;57.000;-;-;-;1;-;-;75%;0.004;0,4%;16
+kelechi_iheanacho;Kelechi Iheanacho;/da/premier-league-fantasy-fall-2018/players/kelechi_iheanacho;Leicester City;Angreb;3554000;54.000;-;-;-;-;-;-;100%;0.021;2,1%;-2
+jamie_vardy;Jamie Vardy;/da/premier-league-fantasy-fall-2018/players/jamie_vardy;Leicester City;Angreb;7086000;86.000;1;-;1;-;-;-;50%;0.01;1,0%;-3
+shinji_okazaki;Shinji Okazaki;/da/premier-league-fantasy-fall-2018/players/shinji_okazaki;Leicester City;Angreb;3524000;24.000;-;-;-;-;-;-;50%;0.002;0,2%;-1
+fousseni_diabate;Fousseni Diabate;/da/premier-league-fantasy-fall-2018/players/fousseni_diabate;Leicester City;Angreb;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+layton_ndukwu;Layton Ndukwu;/da/premier-league-fantasy-fall-2018/players/layton_ndukwu;Leicester City;Angreb;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+simon_mignolet;Simon Mignolet;/da/premier-league-fantasy-fall-2018/players/simon_mignolet;Liverpool;Mål;5480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+nathaniel_clyne;Nathaniel Clyne;/da/premier-league-fantasy-fall-2018/players/nathaniel_clyne;Liverpool;Forsvar;3480000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-8
+virgil_van_dijk;Virgil van Dijk;/da/premier-league-fantasy-fall-2018/players/virgil_van_dijk;Liverpool;Forsvar;5360000;360.000;-;-;-;1;-;-;100%;0.107;10,7%;-34
+dejan_lovren;Dejan Lovren;/da/premier-league-fantasy-fall-2018/players/dejan_lovren;Liverpool;Forsvar;4480000;-20.000;-;-;-;-;-;-;0%;0.016;1,6%;-13
+joseph_dave_gomez;Joseph 'Joe' Gomez;/da/premier-league-fantasy-fall-2018/players/joseph_dave_gomez;Liverpool;Forsvar;3890000;390.000;-;-;-;-;1;-;100%;0.062;6,2%;-31
+alberto_moreno_perez;Alberto Moreno;/da/premier-league-fantasy-fall-2018/players/alberto_moreno_perez;Liverpool;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-4
+andrew_robertson;Andrew Robertson;/da/premier-league-fantasy-fall-2018/players/andrew_robertson;Liverpool;Forsvar;5980000;480.000;-;2;-;-;-;-;100%;0.016;1,6%;14
+joel_matip;Joel Matip;/da/premier-league-fantasy-fall-2018/players/joel_matip;Liverpool;Forsvar;3564000;64.000;-;-;-;-;-;-;50%;0.003;0,3%;-1
+trent_alexander_arnold;Trent Alexander-Arnold;/da/premier-league-fantasy-fall-2018/players/trent_alexander_arnold;Liverpool;Forsvar;4330000;330.000;-;-;-;3;1;-;100%;0.188;18,8%;-64
+georginio_wijnaldum;Georginio Wijnaldum;/da/premier-league-fantasy-fall-2018/players/georginio_wijnaldum;Liverpool;Midtbane;4750000;250.000;-;-;-;-;2;-;100%;0.026;2,6%;-1
+james_milner;James Milner;/da/premier-league-fantasy-fall-2018/players/james_milner;Liverpool;Midtbane;3955000;455.000;1;2;-;1;-;-;100%;0.265;26,5%;39
+jordan_henderson;Jordan Henderson;/da/premier-league-fantasy-fall-2018/players/jordan_henderson;Liverpool;Midtbane;4680000;180.000;-;-;-;-;-;-;100%;0.012;1,2%;-1
+adam_lallana;Adam Lallana;/da/premier-league-fantasy-fall-2018/players/adam_lallana;Liverpool;Midtbane;4037000;37.000;-;-;-;-;-;-;25%;0.003;0,3%;-4
+alex_oxlade_chamberlain;Alex Oxlade-Chamberlain;/da/premier-league-fantasy-fall-2018/players/alex_oxlade_chamberlain;Liverpool;Midtbane;3980000;-20.000;-;-;-;-;-;-;0%;0.007;0,7%;-6
+lazar_markovic;Lazar Markovic;/da/premier-league-fantasy-fall-2018/players/lazar_markovic;Liverpool;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+pedro_chirivella;Pedro Chirivella;/da/premier-league-fantasy-fall-2018/players/pedro_chirivella;Liverpool;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+roberto_firmino;Roberto Firmino;/da/premier-league-fantasy-fall-2018/players/roberto_firmino;Liverpool;Angreb;7980000;480.000;1;2;-;-;3;-;100%;0.179;17,9%;-23
+sadio_mane;Sadio Mane;/da/premier-league-fantasy-fall-2018/players/sadio_mane;Liverpool;Angreb;8640000;640.000;4;-;-;-;2;-;100%;0.087;8,7%;73
+mohamed_salah;Mohamed Salah;/da/premier-league-fantasy-fall-2018/players/mohamed_salah;Liverpool;Angreb;10580000;580.000;2;1;-;-;5;-;100%;0.313;31,3%;-163
+daniel_sturridge;Daniel Sturridge;/da/premier-league-fantasy-fall-2018/players/daniel_sturridge;Liverpool;Angreb;4721000;221.000;1;-;-;-;1;-;75%;0.016;1,6%;-24
+danny_ings;Danny Ings;/da/premier-league-fantasy-fall-2018/players/danny_ings;Southampton;Angreb;3284000;284.000;2;-;-;-;2;-;100%;0.014;1,4%;69
+dominic_solanke;Dominic Solanke;/da/premier-league-fantasy-fall-2018/players/dominic_solanke;Liverpool;Angreb;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+rhian_brewster;Rhian Brewster;/da/premier-league-fantasy-fall-2018/players/rhian_brewster;Liverpool;Angreb;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-
+alireza_jahanbakhsh;Alireza Jahanbakhsh;/da/premier-league-fantasy-fall-2018/players/alireza_jahanbakhsh;Brighton and Hove;Midtbane;5501000;1.000;-;-;-;-;-;-;75%;0.001;0,1%;-2
+ederson_moraes;Ederson Moraes;/da/premier-league-fantasy-fall-2018/players/ederson_moraes;Manchester City;Mål;7354000;354.000;-;1;-;-;-;5;100%;0.026;2,6%;-1
+joe_hart;Joe Hart;/da/premier-league-fantasy-fall-2018/players/joe_hart;Burnley;Mål;5211000;211.000;-;-;-;-;-;22;100%;0.007;0,7%;-1
+claudio_bravo;Claudio Bravo;/da/premier-league-fantasy-fall-2018/players/claudio_bravo;Manchester City;Mål;5980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+arijanet_muric;Arijanet Muric;/da/premier-league-fantasy-fall-2018/players/arijanet_muric;Manchester City;Mål;4480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+daniel_grimshaw;Daniel Grimshaw;/da/premier-league-fantasy-fall-2018/players/daniel_grimshaw;Manchester City;Mål;3980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+benjamin_mendy;Benjamin Mendy;/da/premier-league-fantasy-fall-2018/players/benjamin_mendy;Manchester City;Forsvar;3464000;464.000;-;4;-;-;1;-;100%;0.609;60,9%;90
+danilo_luiz_da_silva;Danilo;/da/premier-league-fantasy-fall-2018/players/danilo_luiz_da_silva;Manchester City;Forsvar;5480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-2
+kyle_walker;Kyle Walker;/da/premier-league-fantasy-fall-2018/players/kyle_walker;Manchester City;Forsvar;5845000;345.000;1;-;-;-;-;-;75%;0.025;2,5%;15
+aymeric_laporte;Aymeric Laporte;/da/premier-league-fantasy-fall-2018/players/aymeric_laporte;Manchester City;Forsvar;5429000;429.000;1;-;-;-;1;-;100%;0.013;1,3%;28
+john_stones;John Stones;/da/premier-league-fantasy-fall-2018/players/john_stones;Manchester City;Forsvar;5735000;235.000;-;-;-;-;-;-;75%;0.012;1,2%;-2
+nicolas_otamendi;Nicolas Otamendi;/da/premier-league-fantasy-fall-2018/players/nicolas_otamendi;Manchester City;Forsvar;4980000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-9
+vincent_kompany;Vincent Kompany;/da/premier-league-fantasy-fall-2018/players/vincent_kompany;Manchester City;Forsvar;4105000;105.000;-;-;-;1;-;-;75%;0.028;2,8%;1
+eliaquim_mangala;Eliaquim Mangala;/da/premier-league-fantasy-fall-2018/players/eliaquim_mangala;Manchester City;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+brahim_diaz;Brahim Diaz;/da/premier-league-fantasy-fall-2018/players/brahim_diaz;Manchester City;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+ilkay_gundogan;Ilkay Gündogan;/da/premier-league-fantasy-fall-2018/players/ilkay_gundogan;Manchester City;Midtbane;5252000;252.000;-;1;-;-;2;-;100%;0.033;3,3%;-4
+kevin_de_bruyne;Kevin De Bruyne;/da/premier-league-fantasy-fall-2018/players/kevin_de_bruyne;Manchester City;Midtbane;8027000;27.000;-;-;-;1;1;-;25%;0.027;2,7%;-27
+leroy_sane;Leroy Sane;/da/premier-league-fantasy-fall-2018/players/leroy_sane;Manchester City;Midtbane;7601000;101.000;-;-;-;-;1;-;75%;0.039;3,9%;-96
+fabian_delph;Fabian Delph;/da/premier-league-fantasy-fall-2018/players/fabian_delph;Manchester City;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.007;0,7%;-6
+phil_foden;Phil Foden;/da/premier-league-fantasy-fall-2018/players/phil_foden;Manchester City;Midtbane;2527000;27.000;-;-;-;-;-;-;25%;0.042;4,2%;-46
+bernardo_silva;Bernardo Silva;/da/premier-league-fantasy-fall-2018/players/bernardo_silva;Manchester City;Midtbane;7827000;327.000;1;-;-;-;2;-;100%;0.015;1,5%;-11
+fernandinho;Fernandinho;/da/premier-league-fantasy-fall-2018/players/fernandinho;Manchester City;Midtbane;5214000;214.000;-;-;-;-;1;-;100%;0.03;3,0%;17
+claudio_gomes;Claudio Gomes;/da/premier-league-fantasy-fall-2018/players/claudio_gomes;Manchester City;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-1
+david_silva;David Silva;/da/premier-league-fantasy-fall-2018/players/david_silva;Manchester City;Midtbane;7242000;242.000;1;-;-;1;2;-;75%;0.018;1,8%;23
+raheem_sterling;Raheem Sterling;/da/premier-league-fantasy-fall-2018/players/raheem_sterling;Manchester City;Midtbane;8395000;395.000;2;-;-;1;2;-;75%;0.019;1,9%;20
+olexandr_zinchenko;Olexandr Zinchenko;/da/premier-league-fantasy-fall-2018/players/olexandr_zinchenko;Manchester City;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+gabriel_jesus;Gabriel Jesus;/da/premier-league-fantasy-fall-2018/players/gabriel_jesus;Manchester City;Angreb;7392000;392.000;1;-;-;-;7;-;100%;0.053;5,3%;10
+sergio_aguero;Sergio Agüero;/da/premier-league-fantasy-fall-2018/players/sergio_aguero;Manchester City;Angreb;8674000;674.000;3;1;-;-;3;-;100%;0.368;36,8%;83
+david_de_gea;David de Gea;/da/premier-league-fantasy-fall-2018/players/david_de_gea;Manchester United;Mål;6672000;172.000;-;-;-;-;-;9;100%;0.096;9,6%;-6
+sergio_romero;Sergio Romero;/da/premier-league-fantasy-fall-2018/players/sergio_romero;Manchester United;Mål;5480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+victor_lindelof;Victor Lindelöf;/da/premier-league-fantasy-fall-2018/players/victor_lindelof;Manchester United;Forsvar;4118000;118.000;-;-;-;-;-;-;100%;0.005;0,5%;7
+eric_bertrand_bailly;Eric Bertrand Bailly;/da/premier-league-fantasy-fall-2018/players/eric_bertrand_bailly;Manchester United;Forsvar;4069000;69.000;-;-;-;-;-;-;75%;0.064;6,4%;-27
+phil_jones;Phil Jones;/da/premier-league-fantasy-fall-2018/players/phil_jones;Manchester United;Forsvar;3451000;-49.000;-;-;-;-;-;-;25%;0.005;0,5%;-2
+marcos_rojo;Marcos Rojo;/da/premier-league-fantasy-fall-2018/players/marcos_rojo;Manchester United;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0.003;0,3%;-3
+chris_smalling;Chris Smalling;/da/premier-league-fantasy-fall-2018/players/chris_smalling;Manchester United;Forsvar;6060000;60.000;-;-;-;-;-;-;50%;0.002;0,2%;-
+ashley_young;Ashley Young;/da/premier-league-fantasy-fall-2018/players/ashley_young;Manchester United;Forsvar;4973000;-27.000;-;-;-;-;-;-;25%;0.007;0,7%;-4
+luke_shaw;Luke Shaw;/da/premier-league-fantasy-fall-2018/players/luke_shaw;Manchester United;Forsvar;4792000;292.000;1;-;-;1;3;-;100%;0.011;1,1%;23
+timothy_fosu-mensah;Timothy Fosu-Mensah;/da/premier-league-fantasy-fall-2018/players/timothy_fosu-mensah;Fulham;Forsvar;2555000;55.000;-;-;-;-;1;-;75%;0.007;0,7%;-9
+luis_antonio_valencia;Luis Antonio Valencia;/da/premier-league-fantasy-fall-2018/players/luis_antonio_valencia;Manchester United;Forsvar;6040000;40.000;-;-;-;1;-;-;50%;0.003;0,3%;-
+matteo_darmian;Matteo Darmian;/da/premier-league-fantasy-fall-2018/players/matteo_darmian;Manchester United;Forsvar;3039000;39.000;-;-;-;-;1;-;25%;0.019;1,9%;-33
+paul_pogba;Paul Pogba;/da/premier-league-fantasy-fall-2018/players/paul_pogba;Manchester United;Midtbane;6810000;310.000;2;-;-;-;3;-;100%;0.034;3,4%;-
+juan_manuel_mata;Juan Manuel Mata;/da/premier-league-fantasy-fall-2018/players/juan_manuel_mata;Manchester United;Midtbane;4062000;62.000;-;1;-;-;-;-;50%;0.025;2,5%;-39
+jesse_lingard;Jesse Lingard;/da/premier-league-fantasy-fall-2018/players/jesse_lingard;Manchester United;Midtbane;5527000;27.000;-;-;-;-;1;-;75%;0.03;3,0%;1
+andreas_pereira;Andreas Pereira;/da/premier-league-fantasy-fall-2018/players/andreas_pereira;Manchester United;Midtbane;3492000;-8.000;-;-;-;1;-;-;50%;0.019;1,9%;-25
+ander_herrera;Ander Herrera;/da/premier-league-fantasy-fall-2018/players/ander_herrera;Manchester United;Midtbane;2988000;-12.000;-;-;-;1;1;-;50%;0.016;1,6%;3
+marouane_fellaini;Marouane Fellaini;/da/premier-league-fantasy-fall-2018/players/marouane_fellaini;Manchester United;Midtbane;3562000;62.000;-;-;-;-;-;-;100%;0.015;1,5%;10
+nemanja_matic;Nemanja Matic;/da/premier-league-fantasy-fall-2018/players/nemanja_matic;Manchester United;Midtbane;4018000;18.000;-;-;-;-;-;-;50%;0.019;1,9%;14
+scott_mctominay;Scott McTominay;/da/premier-league-fantasy-fall-2018/players/scott_mctominay;Manchester United;Midtbane;3019000;19.000;-;-;-;-;-;-;25%;0.002;0,2%;-2
+alexis_sanchez;Alexis Sanchez;/da/premier-league-fantasy-fall-2018/players/alexis_sanchez;Manchester United;Angreb;6625000;125.000;-;1;-;1;2;-;75%;0.08;8,0%;-10
+romelu_lukaku;Romelu Lukaku;/da/premier-league-fantasy-fall-2018/players/romelu_lukaku;Manchester United;Angreb;8902000;402.000;3;-;-;1;5;-;100%;0.101;10,1%;53
+anthony_martial;Anthony Martial;/da/premier-league-fantasy-fall-2018/players/anthony_martial;Manchester United;Angreb;4943000;-57.000;-;-;-;1;-;-;25%;0.01;1,0%;-1
+marcus_rashford;Marcus Rashford;/da/premier-league-fantasy-fall-2018/players/marcus_rashford;Manchester United;Angreb;6031000;31.000;-;-;1;-;-;-;75%;0.029;2,9%;-40
+karl_darlow;Karl Darlow;/da/premier-league-fantasy-fall-2018/players/karl_darlow;Newcastle;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+rob_elliot;Rob Elliot;/da/premier-league-fantasy-fall-2018/players/rob_elliot;Newcastle;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+freddie_woodman;Freddie Woodman;/da/premier-league-fantasy-fall-2018/players/freddie_woodman;Newcastle;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+ciaran_clark;Ciaran Clark;/da/premier-league-fantasy-fall-2018/players/ciaran_clark;Newcastle;Forsvar;2500000;-;-;-;-;-;-;-;100%;0.002;0,2%;-
+paul_dummett;Paul Dummett;/da/premier-league-fantasy-fall-2018/players/paul_dummett;Newcastle;Forsvar;3000000;-;-;-;-;-;-;-;100%;0.001;0,1%;-
+jamaal_lascelles;Jamaal Lascelles;/da/premier-league-fantasy-fall-2018/players/jamaal_lascelles;Newcastle;Forsvar;4019000;19.000;-;-;-;-;-;-;75%;0.003;0,3%;-2
+achraf_lazaar;Achraf Lazaar;/da/premier-league-fantasy-fall-2018/players/achraf_lazaar;Newcastle;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+florian_lejeune;Florian Lejeune;/da/premier-league-fantasy-fall-2018/players/florian_lejeune;Newcastle;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+javier_manquillo;Javier Manquillo;/da/premier-league-fantasy-fall-2018/players/javier_manquillo;Newcastle;Forsvar;1977000;-23.000;-;-;-;1;-;-;25%;0.005;0,5%;-
+jamie_sterry;Jamie Sterry;/da/premier-league-fantasy-fall-2018/players/jamie_sterry;Newcastle;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+deandre_yedlin;DeAndre Yedlin;/da/premier-league-fantasy-fall-2018/players/deandre_yedlin;Newcastle;Forsvar;3058000;58.000;1;1;-;-;-;-;75%;0.002;0,2%;2
+rolando_aarons;Rolando Aarons;/da/premier-league-fantasy-fall-2018/players/rolando_aarons;Newcastle;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+christian_atsu;Christian Atsu;/da/premier-league-fantasy-fall-2018/players/christian_atsu;Newcastle;Midtbane;2464000;-36.000;-;-;-;-;-;-;50%;0.004;0,4%;-1
+mohamed_diame;Mohamed Diame;/da/premier-league-fantasy-fall-2018/players/mohamed_diame;Newcastle;Midtbane;2440000;-60.000;-;-;-;1;1;-;100%;0.003;0,3%;-2
+isaac_hayden;Isaac Hayden;/da/premier-league-fantasy-fall-2018/players/isaac_hayden;Newcastle;Midtbane;1947000;-53.000;-;-;1;-;-;-;25%;0.001;0,1%;2
+jacob_murphy;Jacob Murphy;/da/premier-league-fantasy-fall-2018/players/jacob_murphy;Newcastle;Midtbane;1991000;-9.000;-;-;-;-;1;-;75%;0.001;0,1%;2
+matt_ritchie;Matt Ritchie;/da/premier-league-fantasy-fall-2018/players/matt_ritchie;Newcastle;Midtbane;3969000;-31.000;-;1;-;2;-;-;75%;0.002;0,2%;-5
+henri_saivet;Henri Saivet;/da/premier-league-fantasy-fall-2018/players/henri_saivet;Newcastle;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+jonjo_shelvey;Jonjo Shelvey;/da/premier-league-fantasy-fall-2018/players/jonjo_shelvey;Newcastle;Midtbane;3488000;-12.000;-;-;-;-;1;-;50%;0.004;0,4%;-2
+aleksandar_mitrovic;Aleksandar Mitrovic;/da/premier-league-fantasy-fall-2018/players/aleksandar_mitrovic;Fulham;Angreb;3476000;476.000;4;-;-;1;5;-;100%;0.19;19,0%;31
+ayoze_perez;Ayoze Perez;/da/premier-league-fantasy-fall-2018/players/ayoze_perez;Newcastle;Angreb;4480000;-20.000;-;-;-;-;3;-;100%;0.002;0,2%;-2
+jose_luis_sanmartin_mato;Joselu Sanmartin;/da/premier-league-fantasy-fall-2018/players/jose_luis_sanmartin_mato;Newcastle;Angreb;3146000;146.000;2;-;-;1;1;-;100%;0.002;0,2%;-2
+alex_mccarthy;Alex McCarthy;/da/premier-league-fantasy-fall-2018/players/alex_mccarthy;Southampton;Mål;3786000;286.000;-;-;-;-;-;20;100%;0.012;1,2%;27
+fraser_forster;Fraser Forster;/da/premier-league-fantasy-fall-2018/players/fraser_forster;Southampton;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-6
+cedric_soares;Cedric Soares;/da/premier-league-fantasy-fall-2018/players/cedric_soares;Southampton;Forsvar;3126000;126.000;-;1;-;1;1;-;100%;0.005;0,5%;3
+maya_yoshida;Maya Yoshida;/da/premier-league-fantasy-fall-2018/players/maya_yoshida;Southampton;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-1
+jack_stephens;Jack Stephens;/da/premier-league-fantasy-fall-2018/players/jack_stephens;Southampton;Forsvar;3028000;28.000;-;-;-;1;1;-;50%;0;0,0%;-
+wesley_hoedt;Wesley Hoedt;/da/premier-league-fantasy-fall-2018/players/wesley_hoedt;Southampton;Forsvar;2616000;116.000;-;-;-;1;-;-;100%;0.003;0,3%;10
+ryan_bertrand;Ryan Bertrand;/da/premier-league-fantasy-fall-2018/players/ryan_bertrand;Southampton;Forsvar;3266000;266.000;1;-;-;1;-;-;100%;0.028;2,8%;13
+alfie_jones;Alfie Jones;/da/premier-league-fantasy-fall-2018/players/alfie_jones;Southampton;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+matt_targett;Matt Targett;/da/premier-league-fantasy-fall-2018/players/matt_targett;Southampton;Forsvar;2087000;87.000;-;1;-;-;-;-;25%;0.003;0,3%;14
+jan_bednarek;Jan Bednarek;/da/premier-league-fantasy-fall-2018/players/jan_bednarek;Southampton;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+yan_valery;Yan Valery;/da/premier-league-fantasy-fall-2018/players/yan_valery;Southampton;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+steven_davis;Steven Davis;/da/premier-league-fantasy-fall-2018/players/steven_davis;Southampton;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+oriol_romeu_vidal;Oriol Romeu Vidal;/da/premier-league-fantasy-fall-2018/players/oriol_romeu_vidal;Southampton;Midtbane;2504000;4.000;-;-;-;1;-;-;100%;0.002;0,2%;-
+james_ward_prowse;James Ward-Prowse;/da/premier-league-fantasy-fall-2018/players/james_ward_prowse;Southampton;Midtbane;3481000;-19.000;-;-;-;-;1;-;25%;0.004;0,4%;-4
+mario_lemina;Mario Lemina;/da/premier-league-fantasy-fall-2018/players/mario_lemina;Southampton;Midtbane;2586000;86.000;-;1;-;1;2;-;100%;0.005;0,5%;7
+nathan_redmond;Nathan Redmond;/da/premier-league-fantasy-fall-2018/players/nathan_redmond;Southampton;Midtbane;3046000;46.000;-;-;-;-;1;-;100%;0.011;1,1%;8
+pierre_emile_hojbjerg;Pierre-Emile Højbjerg;/da/premier-league-fantasy-fall-2018/players/pierre_emile_hojbjerg;Southampton;Midtbane;2631000;131.000;1;-;-;2;1;-;50%;0.028;2,8%;45
+shane_long;Shane Long;/da/premier-league-fantasy-fall-2018/players/shane_long;Southampton;Angreb;2533000;33.000;-;-;-;-;1;-;75%;0.006;0,6%;22
+charlie_austin;Charlie Austin;/da/premier-league-fantasy-fall-2018/players/charlie_austin;Southampton;Angreb;3494000;-6.000;-;-;-;-;-;-;100%;0.007;0,7%;-3
+mohamed_elyounoussi;Mohamed Elyounoussi;/da/premier-league-fantasy-fall-2018/players/mohamed_elyounoussi;Southampton;Angreb;4563000;63.000;-;-;-;-;2;-;75%;0.002;0,2%;-
+manolo_gabbiadini;Manolo Gabbiadini;/da/premier-league-fantasy-fall-2018/players/manolo_gabbiadini;Southampton;Angreb;2994000;-6.000;-;-;-;-;-;-;50%;0.004;0,4%;-3
+sam_gallagher;Sam Gallagher;/da/premier-league-fantasy-fall-2018/players/sam_gallagher;Southampton;Angreb;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+hugo_lloris;Hugo Lloris;/da/premier-league-fantasy-fall-2018/players/hugo_lloris;Tottenham;Mål;6790000;290.000;-;-;-;-;-;8;75%;0.024;2,4%;-15
+michel_vorm;Michel Vorm;/da/premier-league-fantasy-fall-2018/players/michel_vorm;Tottenham;Mål;4976000;-24.000;-;-;-;-;-;1;25%;0;0,0%;-
+paulo_gazzaniga;Paulo Gazzaniga;/da/premier-league-fantasy-fall-2018/players/paulo_gazzaniga;Tottenham;Mål;4980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+kieran_trippier;Kieran Trippier;/da/premier-league-fantasy-fall-2018/players/kieran_trippier;Tottenham;Forsvar;4377000;377.000;1;1;-;-;-;-;75%;0.313;31,3%;-56
+danny_rose;Danny Rose;/da/premier-league-fantasy-fall-2018/players/danny_rose;Tottenham;Forsvar;3574000;74.000;-;-;-;1;-;-;50%;0.014;1,4%;-7
+toby_alderweireld;Toby Alderweireld;/da/premier-league-fantasy-fall-2018/players/toby_alderweireld;Tottenham;Forsvar;3657000;157.000;-;-;-;-;-;-;75%;0.173;17,3%;-13
+jan_vertonghen;Jan Vertonghen;/da/premier-league-fantasy-fall-2018/players/jan_vertonghen;Tottenham;Forsvar;4866000;366.000;1;-;-;-;-;-;100%;0.047;4,7%;-18
+davinson_sanchez;Davinson Sanchez;/da/premier-league-fantasy-fall-2018/players/davinson_sanchez;Tottenham;Forsvar;4619000;119.000;-;1;-;-;-;-;75%;0.01;1,0%;-2
+heung_min_son;Heung-Min Son;/da/premier-league-fantasy-fall-2018/players/heung_min_son;Tottenham;Angreb;6527000;27.000;-;-;-;-;-;-;25%;0.021;2,1%;-6
+vincent_janssen;Vincent Janssen;/da/premier-league-fantasy-fall-2018/players/vincent_janssen;Tottenham;Angreb;2480000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+harry_kane;Harry Kane;/da/premier-league-fantasy-fall-2018/players/harry_kane;Tottenham;Angreb;10426000;426.000;2;1;-;2;2;-;100%;0.186;18,6%;-40
+erik_lamela;Erik Lamela;/da/premier-league-fantasy-fall-2018/players/erik_lamela;Tottenham;Midtbane;4107000;107.000;-;1;-;-;2;-;25%;0.006;0,6%;-2
+victor_wanyama;Victor Wanyama;/da/premier-league-fantasy-fall-2018/players/victor_wanyama;Tottenham;Midtbane;3480000;-20.000;-;-;-;-;-;-;0%;0.003;0,3%;-1
+georges_kevin_n_koudou;Georges-Kevin N'Koudou;/da/premier-league-fantasy-fall-2018/players/georges_kevin_n_koudou;Tottenham;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.003;0,3%;-1
+eric_dier;Eric Dier;/da/premier-league-fantasy-fall-2018/players/eric_dier;Tottenham;Midtbane;4135000;135.000;-;-;-;1;-;-;75%;0.028;2,8%;-28
+moussa_sissoko;Moussa Sissoko;/da/premier-league-fantasy-fall-2018/players/moussa_sissoko;Tottenham;Midtbane;3549000;49.000;-;-;-;-;1;-;25%;0.004;0,4%;-8
+fernando_llorente;Fernando Llorente;/da/premier-league-fantasy-fall-2018/players/fernando_llorente;Tottenham;Angreb;3477000;-23.000;-;-;-;-;-;-;25%;0.003;0,3%;-2
+moussa_sidi_yaya_dembele;Moussa Dembele;/da/premier-league-fantasy-fall-2018/players/moussa_sidi_yaya_dembele;Tottenham;Midtbane;3632000;132.000;-;-;-;1;-;-;100%;0.148;14,8%;-44
+dele_alli;Dele Alli;/da/premier-league-fantasy-fall-2018/players/dele_alli;Tottenham;Midtbane;6861000;361.000;1;-;-;-;4;-;100%;0.033;3,3%;-16
+juan_foyth;Juan Foyth;/da/premier-league-fantasy-fall-2018/players/juan_foyth;Tottenham;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-
+christian_eriksen;Christian Eriksen;/da/premier-league-fantasy-fall-2018/players/christian_eriksen;Tottenham;Midtbane;7756000;256.000;-;1;-;-;4;-;100%;0.129;12,9%;-36
+serge_aurier;Serge Aurier;/da/premier-league-fantasy-fall-2018/players/serge_aurier;Tottenham;Forsvar;4646000;146.000;-;1;-;-;-;-;50%;0.006;0,6%;-1
+lucas_moura;Lucas Moura;/da/premier-league-fantasy-fall-2018/players/lucas_moura;Tottenham;Midtbane;5521000;521.000;3;-;-;1;-;-;100%;0.06;6,0%;59
+harry_winks;Harry Winks;/da/premier-league-fantasy-fall-2018/players/harry_winks;Tottenham;Midtbane;3561000;61.000;-;-;-;-;-;-;75%;0.001;0,1%;2
+ben_davies;Ben Davies;/da/premier-league-fantasy-fall-2018/players/ben_davies;Tottenham;Forsvar;5156000;156.000;-;-;-;-;1;-;100%;0.003;0,3%;-1
+kyle_walker_peters;Kyle Walker-Peters;/da/premier-league-fantasy-fall-2018/players/kyle_walker_peters;Tottenham;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.004;0,4%;-1
+cameron_carter_vickers;Cameron Carter-Vickers;/da/premier-league-fantasy-fall-2018/players/cameron_carter_vickers;Tottenham;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-
+pontus_dahlberg;Pontus Dahlberg;/da/premier-league-fantasy-fall-2018/players/pontus_dahlberg;Watford;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+heurelho_gomes;Heurelho Gomes;/da/premier-league-fantasy-fall-2018/players/heurelho_gomes;Watford;Mål;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+daryl_janmaat;Daryl Janmaat;/da/premier-league-fantasy-fall-2018/players/daryl_janmaat;Watford;Forsvar;3264000;264.000;-;1;-;2;-;-;100%;0.007;0,7%;8
+miguel_angel_britos;Miguel Angel Britos;/da/premier-league-fantasy-fall-2018/players/miguel_angel_britos;Watford;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+younes_kaboul;Younes Kaboul;/da/premier-league-fantasy-fall-2018/players/younes_kaboul;Watford;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-
+sebastian_prodl;Sebastian Prödl;/da/premier-league-fantasy-fall-2018/players/sebastian_prodl;Watford;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.018;1,8%;-11
+adrian_mariappa;Adrian Mariappa;/da/premier-league-fantasy-fall-2018/players/adrian_mariappa;Watford;Forsvar;2517000;17.000;-;-;-;-;-;-;25%;0;0,0%;-
+craig_cathcart;Craig Cathcart;/da/premier-league-fantasy-fall-2018/players/craig_cathcart;Watford;Forsvar;2434000;434.000;1;-;-;-;-;-;100%;0.026;2,6%;70
+kiko_femenia;Kiko Femenia;/da/premier-league-fantasy-fall-2018/players/kiko_femenia;Watford;Forsvar;2564000;64.000;-;-;-;-;-;-;50%;0.001;0,1%;1
+marvin_zeegelaar;Marvin Zeegelaar;/da/premier-league-fantasy-fall-2018/players/marvin_zeegelaar;Watford;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-1
+jose_lloyd_holebas;Jose Holebas;/da/premier-league-fantasy-fall-2018/players/jose_lloyd_holebas;Watford;Forsvar;3094000;594.000;1;4;-;2;-;-;100%;0.105;10,5%;196
+christian_kabasele;Christian Kabasele;/da/premier-league-fantasy-fall-2018/players/christian_kabasele;Watford;Forsvar;2754000;254.000;-;-;-;-;-;-;100%;0.006;0,6%;20
+isaac_success;Isaac Success;/da/premier-league-fantasy-fall-2018/players/isaac_success;Watford;Midtbane;2138000;138.000;-;-;-;1;1;-;100%;0.015;1,5%;40
+gerard_deulofeu;Gerard Deulofeu;/da/premier-league-fantasy-fall-2018/players/gerard_deulofeu;Watford;Midtbane;2980000;-20.000;-;-;-;-;-;-;0%;0.054;5,4%;-38
+tom_cleverley;Tom Cleverley;/da/premier-league-fantasy-fall-2018/players/tom_cleverley;Watford;Midtbane;2480000;-20.000;-;-;-;-;-;-;0%;0.002;0,2%;-
+nathaniel_chalobah;Nathaniel Chalobah;/da/premier-league-fantasy-fall-2018/players/nathaniel_chalobah;Watford;Midtbane;2017000;17.000;-;-;-;-;-;-;25%;0.002;0,2%;1
+abdoulaye_doucoure;Abdoulaye Doucoure;/da/premier-league-fantasy-fall-2018/players/abdoulaye_doucoure;Watford;Midtbane;4179000;179.000;-;1;-;-;-;-;100%;0.007;0,7%;5
+will_hughes;Will Hughes;/da/premier-league-fantasy-fall-2018/players/will_hughes;Watford;Midtbane;2819000;319.000;1;-;-;1;1;-;100%;0.023;2,3%;51
+etienne_capoue;Etienne Capoue;/da/premier-league-fantasy-fall-2018/players/etienne_capoue;Watford;Midtbane;2704000;204.000;-;1;-;3;1;-;100%;0.009;0,9%;9
+roberto_pereyra;Roberto Pereyra;/da/premier-league-fantasy-fall-2018/players/roberto_pereyra;Watford;Midtbane;4099000;599.000;3;-;-;1;1;-;100%;0.038;3,8%;113
+troy_deeney;Troy Deeney;/da/premier-league-fantasy-fall-2018/players/troy_deeney;Watford;Angreb;4034000;534.000;2;1;-;-;5;-;100%;0.034;3,4%;102
+andre_gray;Andre Gray;/da/premier-league-fantasy-fall-2018/players/andre_gray;Watford;Angreb;3312000;312.000;1;-;-;-;1;-;100%;0.025;2,5%;10
+stefano_okaka;Stefano Okaka;/da/premier-league-fantasy-fall-2018/players/stefano_okaka;Watford;Angreb;1980000;-20.000;-;-;-;-;-;-;0%;0.004;0,4%;-2
+andre_schürrle;Andre Schürrle;/da/premier-league-fantasy-fall-2018/players/andre_schürrle;Fulham;Angreb;4258000;258.000;2;-;-;1;4;-;100%;0.034;3,4%;8
+adrian_del_castillo;Adrian del Castillo;/da/premier-league-fantasy-fall-2018/players/adrian_del_castillo;West Ham;Mål;3480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+ryan_fredericks;Ryan Fredericks;/da/premier-league-fantasy-fall-2018/players/ryan_fredericks;West Ham;Forsvar;3367000;-133.000;-;-;-;2;-;-;75%;0.002;0,2%;-2
+aaron_cresswell;Aaron Cresswell;/da/premier-league-fantasy-fall-2018/players/aaron_cresswell;West Ham;Forsvar;3939000;-61.000;-;-;-;1;-;-;25%;0.003;0,3%;-3
+pablo_zabaleta;Pablo Zabaleta;/da/premier-league-fantasy-fall-2018/players/pablo_zabaleta;West Ham;Forsvar;2441000;-59.000;-;-;-;1;-;-;25%;0.007;0,7%;-9
+angelo_ogbonna;Angelo Ogbonna;/da/premier-league-fantasy-fall-2018/players/angelo_ogbonna;West Ham;Forsvar;2916000;-84.000;-;-;-;1;1;-;50%;0.003;0,3%;-2
+arthur_masuaku;Arthur Masuaku;/da/premier-league-fantasy-fall-2018/players/arthur_masuaku;West Ham;Forsvar;2909000;-91.000;-;-;-;-;-;-;75%;0.004;0,4%;-5
+reece_oxford;Reece Oxford;/da/premier-league-fantasy-fall-2018/players/reece_oxford;West Ham;Forsvar;1980000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-3
+declan_rice;Declan Rice;/da/premier-league-fantasy-fall-2018/players/declan_rice;West Ham;Forsvar;2461000;-39.000;-;-;-;-;-;-;25%;0.001;0,1%;-1
+cheikhou_kouyate;Cheikhou Kouyate;/da/premier-league-fantasy-fall-2018/players/cheikhou_kouyate;Crystal Palace;Midtbane;3026000;26.000;-;-;-;-;2;-;50%;0.002;0,2%;-1
+manuel_lanzini;Manuel Lanzini;/da/premier-league-fantasy-fall-2018/players/manuel_lanzini;West Ham;Midtbane;3980000;-20.000;-;-;-;-;-;-;0%;0.008;0,8%;-8
+robert_snodgrass;Robert Snodgrass;/da/premier-league-fantasy-fall-2018/players/robert_snodgrass;West Ham;Midtbane;2930000;-70.000;-;-;-;-;1;-;100%;0.003;0,3%;-3
+pedro_mba_obiang_avomo;Pedro Mba Obiang Avomo;/da/premier-league-fantasy-fall-2018/players/pedro_mba_obiang_avomo;West Ham;Midtbane;2459000;-41.000;-;-;-;-;-;-;25%;0.001;0,1%;-1
+mark_noble;Mark Noble;/da/premier-league-fantasy-fall-2018/players/mark_noble;West Ham;Midtbane;3406000;-94.000;-;-;-;1;-;-;50%;0.004;0,4%;-3
+domingos_quina;Domingos Quina;/da/premier-league-fantasy-fall-2018/players/domingos_quina;Watford;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;1
+marko_arnautovic;Marko Arnautovic;/da/premier-league-fantasy-fall-2018/players/marko_arnautovic;West Ham;Angreb;5642000;142.000;2;-;-;-;3;-;100%;0.031;3,1%;-20
+andy_carroll;Andy Carroll;/da/premier-league-fantasy-fall-2018/players/andy_carroll;West Ham;Angreb;2980000;-20.000;-;-;-;-;-;-;0%;0.005;0,5%;-3
+javier_hernandez;Javier 'Chicharito' Hernandez;/da/premier-league-fantasy-fall-2018/players/javier_hernandez;West Ham;Angreb;3930000;-70.000;-;-;-;-;2;-;100%;0.018;1,8%;-23
+michail_antonio;Michail Antonio;/da/premier-league-fantasy-fall-2018/players/michail_antonio;West Ham;Angreb;3441000;-59.000;-;-;-;1;3;-;75%;0.003;0,3%;-3
+winston_reid;Winston Reid;/da/premier-league-fantasy-fall-2018/players/winston_reid;West Ham;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0.016;1,6%;-15
+jonathan_castro_otto;Jonathan Castro Otto;/da/premier-league-fantasy-fall-2018/players/jonathan_castro_otto;Wolverhampton;Forsvar;3098000;98.000;-;-;-;-;-;-;100%;0.002;0,2%;5
+robert_green;Robert Green;/da/premier-league-fantasy-fall-2018/players/robert_green;Chelsea;Mål;4480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-
+fabian_schar;Fabian Schär;/da/premier-league-fantasy-fall-2018/players/fabian_schar;Newcastle;Forsvar;2939000;-61.000;-;-;-;1;-;-;25%;0.002;0,2%;-3
+lucas_digne;Lucas Digne;/da/premier-league-fantasy-fall-2018/players/lucas_digne;Everton;Forsvar;3566000;66.000;-;1;-;-;-;-;50%;0.017;1,7%;8
+max_meyer;Max Meyer;/da/premier-league-fantasy-fall-2018/players/max_meyer;Crystal Palace;Midtbane;2975000;-25.000;-;1;-;1;-;-;75%;0.02;2,0%;-15
+alfie_mawson;Alfie Mawson;/da/premier-league-fantasy-fall-2018/players/alfie_mawson;Fulham;Forsvar;3001000;1.000;-;-;-;-;-;-;25%;0.001;0,1%;-
+yoshinori_muto;Yoshinori Muto;/da/premier-league-fantasy-fall-2018/players/yoshinori_muto;Newcastle;Angreb;2973000;-27.000;-;-;-;-;-;-;75%;0.001;0,1%;-
+ben_gibson;Ben Gibson;/da/premier-league-fantasy-fall-2018/players/ben_gibson;Burnley;Forsvar;2980000;-20.000;-;-;-;-;-;-;0%;0.001;0,1%;-
+rachid_ghezzal;Rachid Ghezzal;/da/premier-league-fantasy-fall-2018/players/rachid_ghezzal;Leicester City;Midtbane;3122000;122.000;1;-;-;1;-;-;75%;0.002;0,2%;19
+jose_salomon_rondon;Salomon Rondon;/da/premier-league-fantasy-fall-2018/players/jose_salomon_rondon;Newcastle;Angreb;3495000;-5.000;-;1;-;-;-;-;75%;0.004;0,4%;-
+anders_dreyer;Anders Dreyer;/da/premier-league-fantasy-fall-2018/players/anders_dreyer;Brighton and Hove;Midtbane;1980000;-20.000;-;-;-;-;-;-;0%;0.004;0,4%;1
+nathaniel_phillips;Nathaniel Phillips;/da/premier-league-fantasy-fall-2018/players/nathaniel_phillips;Liverpool;Forsvar;2480000;-20.000;-;-;-;-;-;-;0%;0;0,0%;-1
+jefferson_lerma;Jefferson Lerma;/da/premier-league-fantasy-fall-2018/players/jefferson_lerma;Bournemouth;Midtbane;2441000;-59.000;-;-;-;1;-;-;25%;0.001;0,1%;2
+matej_vydra;Matej Vydra;/da/premier-league-fantasy-fall-2018/players/matej_vydra;Burnley;Angreb;3467000;-33.000;-;-;-;-;-;-;25%;0;0,0%;-1
+luke_amos;Luke Amos;/da/premier-league-fantasy-fall-2018/players/luke_amos;Tottenham;Midtbane;2527000;27.000;-;-;-;-;-;-;25%;0.001;0,1%;-1
+adama_traore_diarra;Adama Traore Diarra;/da/premier-league-fantasy-fall-2018/players/adama_traore_diarra;Wolverhampton;Midtbane;2716000;216.000;1;-;-;-;1;-;75%;0.01;1,0%;75

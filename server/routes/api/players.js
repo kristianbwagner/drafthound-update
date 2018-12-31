@@ -1,4 +1,5 @@
 const Postgres = require("../../../database/postgres/postgres.js");
+const config = require('../../server/config/config.json');
 const Database = new Postgres({
   connectionString: "postgres://gomhcbepfwkkeq:c12e3f58fd938bbbb0825806f1ac90a08cf415de754b2da8d1c4866cf2981faf@ec2-54-217-205-90.eu-west-1.compute.amazonaws.com:5432/dagkemjclktp71",
   ssl: true
@@ -133,8 +134,6 @@ module.exports = (app) => {
 						holdet_team: holdetPlayer.playerTeam || null,
 					}]
 
-					console.log(playerData);
-
 					insertData(playerData, schema).then(() => {
 				    const execuionTime = process.hrtime(execuionStart)[1] / 1000000;
 				    res.json({
@@ -194,7 +193,7 @@ function getPlayerStatistics() {
 		getNumberOfStatisticsPages().then(page => {
 			var statsUrls = [];
 			for (let i = 0; i <= page; i++) {
-				statsUrls.push("https://www.holdet.dk/da/premier-league-fantasy-fall-2018/statistics?page=" + i);
+				statsUrls.push(`${config.holdetUrl}/statistics?page=` + i);
 			}
 			return Promise.all(statsUrls.map(url => {return getPlayerStatsFromHoldetPage(url);}));
 		}).then(responses => {
@@ -208,7 +207,7 @@ function getPlayerStatistics() {
 
 function getNumberOfStatisticsPages() {
 	return new Promise((resolve, reject) => {
-		const firstStatsPage = "https://www.holdet.dk/da/premier-league-fantasy-fall-2018/statistics?page=0";
+		const firstStatsPage = `${config.holdetUrl}/statistics?page=0`;
 		axios.get(firstStatsPage).then(response => {
 			const responseHtml = response.data;
 			const $ = cheerio.load(responseHtml);

@@ -1,4 +1,5 @@
 const axios = require("axios");
+const config = require("../../server/config/config.json")
 
 module.exports = (config) => {
 	return new SportMonks({
@@ -23,7 +24,6 @@ class SportMonks {
 				const responseData = response.data || {};
 				const teamData = responseData.data;
 				const squadRequests = teamData.map(team => {
-					//console.log(this.createUrl("squad/season/" + this.seasonId + "/team/" + team.id, "include=player,position"));
 					teamIds.push(team.id);
 					return axios.get(this.createUrl("squad/season/" + this.seasonId + "/team/" + team.id, "include=player,position"));
 				});
@@ -83,9 +83,8 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const sampleIds = fixtureIds.filter(f => f >= 10332771 && f <= 10332780);
+				const sampleIds = fixtureIds.filter(f => f >= config.roundStart && f <= config.roundStop);
 				return Promise.all(sampleIds.map(id => {
-					console.log(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined"));
 					return axios.get(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined,bench"));
 				}));
 			}).then(responses => {
@@ -114,9 +113,8 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const sampleIds = fixtureIds.filter(f => f >= 10332771 && f <= 10332780);
+				const sampleIds = fixtureIds.filter(f => f >= config.roundStart && f <= config.roundStop);
 				return Promise.all(sampleIds.map(id => {
-					console.log(this.createUrl("fixtures/" + id, "include=comments"));
 					return axios.get(this.createUrl("fixtures/" + id, "include=comments"));
 				}));
 			}).then(responses => {
