@@ -1,0 +1,73 @@
+{
+   "20190102": {
+      "roundStart": 10332951,
+      "roundStop": 10332960,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-fall-2018"
+   },
+   "20190103": {
+      "roundStart": 10332951,
+      "roundStop": 10332960,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-fall-2018"
+   },
+   "20190104": {
+      "roundStart": 10332961,
+      "roundStop": 10332970,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-fall-2018"
+   },
+   "20190114": {
+      "roundStart": 10332971,
+      "roundStop": 10332980,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-spring-2019"
+   },
+   "20190121": {
+      "roundStart": 10332981,
+      "roundStop": 10332990,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-spring-2019"
+   },
+   "20190201": {
+      "roundStart": 10332991,
+      "roundStop": 10333000,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-spring-2019"
+   },
+   "20190204": {
+      "roundStart": 10333001,
+      "roundStop": 10333010,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-spring-2019"
+   },
+   "20190211": {
+      "roundStart": 10333011,
+      "roundStop": 10333020,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-spring-2019"
+   },
+   "20190224": {
+      "roundStart": 10333021,
+      "roundStop": 10333030,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-spring-2019"
+   },
+   "20190228": {
+      "roundStart": 10333031,
+      "roundStop": 10333040,
+      "sportMonksSeasonId": 12962,
+      "sportMonksApiKey": "1jgYd5VzNwfv7uOMpESFmDYtsGUvHevpDjmLa3LBpzvA6OOfno9NnoG166C8",
+      "holdetUrl": "https://www.holdet.dk/da/premier-league-fantasy-spring-2019"
+   }
+}
+

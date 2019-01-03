@@ -1,10 +1,11 @@
 const axios = require("axios");
-const config = require("../../server/config/config.json")
 
 module.exports = (config) => {
 	return new SportMonks({
 		apiKey: config.apiKey,
 		seasonId: config.seasonId,
+		roundStart: config.roundStart,
+		roundStop: config.roundStop,
 	});
 };
 
@@ -13,6 +14,8 @@ class SportMonks {
 	constructor(config) {
 		this.seasonId = config.seasonId;
 		this.apiKey = config.apiKey;
+		this.roundStart = config.roundStart;
+		this.roundStop = config.roundStop;
 	}
 
 	// Getters
@@ -29,7 +32,6 @@ class SportMonks {
 				});
 				return Promise.all(squadRequests);
 			}).then(responses => {
-				//console.log(teamIds);
 				let allPlayers = [];
 				responses.forEach((response, responseIndex) => {
 					const responseData = response.data;
@@ -83,7 +85,7 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const sampleIds = fixtureIds.filter(f => f >= config.roundStart && f <= config.roundStop);
+				const sampleIds = fixtureIds.filter(f => f >= this.roundStart && f <= this.roundStop);
 				return Promise.all(sampleIds.map(id => {
 					return axios.get(this.createUrl("fixtures/" + id, "include=lineup,comments,sidelined,bench"));
 				}));
@@ -113,7 +115,7 @@ class SportMonks {
 				const fixturesObject = seasonData.fixtures || {};
 				const fixturesData = fixturesObject.data || [];
 				const fixtureIds = fixturesData.map(fixture => fixture.id);
-				const sampleIds = fixtureIds.filter(f => f >= config.roundStart && f <= config.roundStop);
+				const sampleIds = fixtureIds.filter(f => f >= this.roundStart && f <= this.roundStop);
 				return Promise.all(sampleIds.map(id => {
 					return axios.get(this.createUrl("fixtures/" + id, "include=comments"));
 				}));
