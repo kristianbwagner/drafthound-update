@@ -1,2 +1,1 @@
-web: node server
 service: node updates/update
