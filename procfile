@@ -1,1 +1,2 @@
-service: node updates/update
+web: node server
+worker: node updates/update
