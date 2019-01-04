@@ -15,11 +15,11 @@ const todaysConfig = schedule[formattedDate]
 
 // Run update if in schedule
 if (todaysConfig) {
-   console.log('\nStarting scheduled update with config:');
+   console.log('Starting scheduled update with config:');
    Object.keys(todaysConfig).forEach(key => console.log(`> ${key}: ${todaysConfig[key]}`));
    updateData(todaysConfig) 
 } else {
-   console.log(`\nNo update scheduled.\n`);
+   console.log(`No update scheduled.`);
 }
 
 function updateData(config){
@@ -34,8 +34,8 @@ function updateData(config){
    }).then(() => {
       return mergeStatistics(config);
    }).then(() => {
-      console.log('\nSuccessfully updated.\n')
+      console.log('Successfully updated.')
    }).catch(err => {
-      console.log(`\nError: ${err}.\n`);
+      console.log(`Error: ${err}.`);
    });
 }
