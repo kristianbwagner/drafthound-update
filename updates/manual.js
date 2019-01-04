@@ -23,18 +23,24 @@ if (todaysConfig) {
 }
 
 function updateData(config){
+   console.log('\n(1/6) Fixtures');
    fixtures(config).then(() => {
+      console.log('\n(2/6) Players');
       return players(config);
    }).then(() => {
+      console.log('\n(3/6) Statistics');
       return statistics(config);
    }).then(() => {
+      console.log('\n(4/6) Commentaries');
       return commentaries(config);
    }).then(() => {
+      console.log('\n(5/6) Merge commentaries');
       return mergeCommentaries(config);
    }).then(() => {
+      console.log('\n(6/6) Merge statistics');
       return mergeStatistics(config);
    }).then(() => {
-      console.log('\nSuccessfully updated.\n')
+      console.log('\nSuccessfully updated. Closing connection...\n')
    }).catch(err => {
       console.log(`\nError: ${err}.\n`);
    });
